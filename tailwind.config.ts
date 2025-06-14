@@ -24,7 +24,7 @@ export default {
 		},
 		extend: {
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
+        sans: ['Roboto', 'sans-serif'],
       },
 			colors: {
         brand: {
