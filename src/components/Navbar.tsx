@@ -18,7 +18,8 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className="bg-brand-white shadow-md sticky top-0 z-50">
-      <div className="container mx-auto px-2 sm:px-4 lg:px-6"> {/* MODIFIED: Reduced horizontal padding */}
+      {/* MODIFIED: Replaced 'container' with 'max-w-[1400px]' for better padding control */}
+      <div className="max-w-[1400px] mx-auto px-2 sm:px-4 lg:px-6">
         <div className="flex items-center justify-between h-20">
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center">
