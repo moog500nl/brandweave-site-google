@@ -1,10 +1,15 @@
-
 import React from 'react';
 import PageSection from '@/components/PageSection';
 import CallToAction from '@/components/CallToAction';
-import { CheckCircle, FileText, BarChart2, ListChecks, Brain } from 'lucide-react'; // Added Brain icon
+import { CheckCircle, FileText, BarChart2, ListChecks, Brain } from 'lucide-react';
+import usePageMetadata from '@/hooks/usePageMetadata';
 
 const AiAuditPage: React.FC = () => {
+  usePageMetadata(
+    "AI Brand Intelligence Audit | Understand Your AI Score | Brandweave AI",
+    "Our AI Brand Audit provides an expert assessment of how LLMs perceive your brand. Get actionable insights, competitor benchmarks, and improve your AI visibility."
+  );
+
   const processSteps = [
     { icon: Brain, title: "Interrogate Top LLMs", description: "We analyse AI outputs and thought patterns to understand how leading models perceive your brand." },
     { icon: BarChart2, title: "Benchmark vs Rivals", description: "We show you who the default recommendation is in your category and, critically, why." },

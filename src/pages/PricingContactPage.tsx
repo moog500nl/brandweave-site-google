@@ -1,10 +1,15 @@
-
 import React from 'react';
 import PageSection from '@/components/PageSection';
 import ContactForm from '@/components/ContactForm';
 import { Mail, ExternalLink } from 'lucide-react';
+import usePageMetadata from '@/hooks/usePageMetadata'; // Import the hook
 
 const PricingContactPage: React.FC = () => {
+  usePageMetadata(
+    "AI Brand Audit Pricing & Contact | Brandweave AI",
+    "Get transparent pricing for our comprehensive AI Brand Intelligence Audit. Contact Brandweave AI founders to start improving your brand's AI presence."
+  );
+
   const founders = [
     { name: "Marenco Kemp", email: "marenco@brandweave.ai" }, // Replace with actual emails
     { name: "Andy Bibby", email: "andy@brandweave.ai" },     // Replace with actual emails

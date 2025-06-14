@@ -1,10 +1,15 @@
-
 import React from 'react';
 import PageSection from '@/components/PageSection';
 import CallToAction from '@/components/CallToAction';
-import { Users, Award, Lightbulb } from 'lucide-react'; // Using Users icon for founders
+import { Users, Award, Lightbulb } from 'lucide-react';
+import usePageMetadata from '@/hooks/usePageMetadata';
 
 const AboutUsPage: React.FC = () => {
+  usePageMetadata(
+    "About Brandweave AI | Expert-Led AI Brand Strategy",
+    "Meet the Brandweave AI team. We help businesses navigate AI-driven brand discovery with expert-led audits and strategic insights for long-term AI brand health."
+  );
+
   const differentiators = [
     "Foundation-level insight into how AI models perceive and rank brands.",
     "Move from 'Model Guesswork' to 'Model Transparency' with evidence-based analysis.",

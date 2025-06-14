@@ -3,16 +3,17 @@ import React from 'react';
 import PageSection from '@/components/PageSection';
 import { Link, useParams } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
+import usePageMetadata from '@/hooks/usePageMetadata'; // Import the hook
 
-// This is a very basic template. In a real app, you'd fetch post data based on slug.
 const BlogPostPage: React.FC = () => {
-  const { slug } = useParams<{ slug: string }>(); // Get slug from URL
+  const { slug } = useParams<{ slug: string }>();
 
   // Placeholder content - in a real app, fetch this based on slug
   const post = {
     title: `Blog Post: ${slug?.split('-').join(' ').toUpperCase() || 'Sample Post Title'}`,
     date: '2025-06-14',
     author: 'Brandweave AI Team',
+    // For a real app, an excerpt property would be better for the meta description
     content: `
       <p>This is placeholder content for the blog post titled "${slug?.split('-').join(' ') || 'Sample Post'}".</p>
       <p class="mt-4">In a real application, this content would be fetched from a CMS or markdown files based on the slug: <strong>${slug}</strong>.</p>
@@ -26,6 +27,11 @@ const BlogPostPage: React.FC = () => {
       <p class="mt-4">The structure would include more text, possibly images, and other rich media to engage the reader.</p>
     `,
   };
+
+  usePageMetadata(
+    `${post.title} | Brandweave AI Blog`,
+    `Read the blog post "${post.title}" on Brandweave AI. Discover insights on AI brand strategy, intelligence, and the future of brand perception.` // Generic description using title
+  );
 
   return (
     <div className="animate-fade-in">

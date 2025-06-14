@@ -1,10 +1,15 @@
-
 import React from 'react';
 import PageSection from '@/components/PageSection';
 import CallToAction from '@/components/CallToAction';
 import PlaceholderChart from '@/components/PlaceholderChart';
+import usePageMetadata from '@/hooks/usePageMetadata'; // Import the hook
 
 const WhyItMattersPage: React.FC = () => {
+  usePageMetadata(
+    "Why AI Brand Perception Matters Now | Brandweave AI",
+    "AI is reshaping brand discovery. Learn why understanding your AI brand perception is crucial for visibility and growth in a 'zero-click' search world. Brandweave AI explains."
+  );
+
   return (
     <div className="animate-fade-in">
       <PageSection>

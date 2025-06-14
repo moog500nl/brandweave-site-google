@@ -1,11 +1,16 @@
-
 import React from 'react';
 import PageSection from '@/components/PageSection';
 import CallToAction from '@/components/CallToAction';
 import PlaceholderChart from '@/components/PlaceholderChart';
 import { CheckCircle } from 'lucide-react';
+import usePageMetadata from '@/hooks/usePageMetadata'; // Import the hook
 
 const HomePage: React.FC = () => {
+  usePageMetadata(
+    "Brandweave AI: Control Your AI Narrative & Boost Brand Visibility",
+    "Is your brand invisible to AI? Brandweave AI offers expert Audits to understand & influence how AI models perceive your brand. Take control of your AI narrative."
+  );
+
   const howItWorksSteps = [
     { title: "Analyse", description: "We interrogate top LLMs to understand their outputs and thought patterns regarding your brand." },
     { title: "Score", description: "Receive a quantifiable Visibility, Sentiment & Trust Scorecard for your brand." },

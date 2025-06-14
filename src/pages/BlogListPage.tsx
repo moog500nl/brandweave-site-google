@@ -1,8 +1,8 @@
-
 import React from 'react';
 import PageSection from '@/components/PageSection';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
+import usePageMetadata from '@/hooks/usePageMetadata'; // Import the hook
 
 // Placeholder blog posts
 const blogPosts = [
@@ -12,6 +12,11 @@ const blogPosts = [
 ];
 
 const BlogListPage: React.FC = () => {
+  usePageMetadata(
+    "Brandweave AI Blog | Insights on AI and Brand Strategy",
+    "Explore the Brandweave AI blog for the latest insights, tips, and news on AI brand perception, visibility, and navigating the future of brand discovery."
+  );
+
   return (
     <div className="animate-fade-in">
       <PageSection>
