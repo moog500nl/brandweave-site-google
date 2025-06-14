@@ -21,7 +21,7 @@ const Navbar: React.FC = () => {
         <div className="flex items-center justify-between h-20">
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center">
-              <img src="/bwlogo.svg" alt="Brandweave AI Logo" className="h-10" />
+              <img src="/bwlogo.svg" alt="Brandweave AI Logo" className="h-16" />
             </Link>
           </div>
           <div className="hidden md:block">
