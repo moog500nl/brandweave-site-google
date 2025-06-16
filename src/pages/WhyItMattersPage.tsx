@@ -1,10 +1,9 @@
-
 import React from 'react';
 import PageSection from '@/components/PageSection';
 import CallToAction from '@/components/CallToAction';
 import PlaceholderChart from '@/components/PlaceholderChart';
 import { ChartContainer, ChartTooltip, ChartTooltipContent } from '@/components/ui/chart';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, ResponsiveContainer } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, ResponsiveContainer, Cell } from 'recharts';
 import usePageMetadata from '@/hooks/usePageMetadata';
 
 const WhyItMattersPage: React.FC = () => {
@@ -26,6 +25,17 @@ const WhyItMattersPage: React.FC = () => {
     },
   };
 
+  const CustomTooltip = ({ active, payload, label }: any) => {
+    if (active && payload && payload.length) {
+      return (
+        <div className="bg-white p-3 border border-gray-300 rounded shadow-lg">
+          <p className="font-roboto text-sm">{`${label}: ${payload[0].value}%`}</p>
+        </div>
+      );
+    }
+    return null;
+  };
+
   return (
     <div className="animate-fade-in">
       <PageSection>
@@ -42,24 +52,23 @@ const WhyItMattersPage: React.FC = () => {
                 Adoption is set to be nearly 50% by the end of 2025. This seismic shift means your audience is increasingly turning to AI for information.
               </p>
               <div className="bg-white p-6 rounded-lg shadow-lg">
-                <h3 className="text-xl font-semibold mb-4 text-center text-brand-navy">UK Adults Who Have Used Generative AI Tools</h3>
-                <ChartContainer config={chartConfig} className="h-80">
+                <ChartContainer config={chartConfig} className="h-80 font-sans">
                   <BarChart data={aiAdoptionData} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis 
                       dataKey="period" 
-                      tick={{ fontSize: 12 }}
+                      tick={{ fontSize: 12, fontFamily: 'Roboto, sans-serif' }}
                     />
                     <YAxis 
-                      tick={{ fontSize: 12 }}
-                      label={{ value: 'Share of UK Adults (%)', angle: -90, position: 'insideLeft' }}
+                      tick={{ fontSize: 12, fontFamily: 'Roboto, sans-serif' }}
+                      label={{ value: 'Share of UK Adults (%)', angle: -90, position: 'insideLeft', style: { fontFamily: 'Roboto, sans-serif' } }}
                     />
-                    <ChartTooltip content={<ChartTooltipContent />} />
-                    <Bar 
-                      dataKey="share" 
-                      fill={(entry) => entry.type === 'forecast' ? '#FF8C00' : '#1a365d'}
-                      radius={[4, 4, 0, 0]}
-                    />
+                    <ChartTooltip content={<CustomTooltip />} />
+                    <Bar dataKey="share" radius={[4, 4, 0, 0]}>
+                      {aiAdoptionData.map((entry, index) => (
+                        <Cell key={`cell-${index}`} fill={entry.type === 'forecast' ? '#fca311' : '#14213d'} />
+                      ))}
+                    </Bar>
                   </BarChart>
                 </ChartContainer>
                 <div className="flex justify-center mt-4 space-x-6 text-sm">
