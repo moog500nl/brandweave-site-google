@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
@@ -6,10 +5,10 @@ import { Button } from '@/components/ui/button'; // Using shadcn button
 
 const NavLinks = [
   { name: 'Home', path: '/' },
-  { name: 'Why It Matters', path: '/why-it-matters' },
-  { name: 'The AI Audit', path: '/ai-audit' },
-  { name: 'About Us', path: '/about-us' },
-  { name: 'Pricing & Contact', path: '/pricing-contact' },
+  { name: 'Why?', path: '/why-it-matters' },
+  { name: 'Audit', path: '/ai-audit' },
+  { name: 'About', path: '/about-us' },
+  { name: 'Pricing', path: '/pricing-contact' },
   { name: 'Blog', path: '/blog' },
 ];
 
