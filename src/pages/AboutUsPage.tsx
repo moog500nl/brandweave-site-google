@@ -1,3 +1,4 @@
+
 import React from 'react';
 import PageSection from '@/components/PageSection';
 import CallToAction from '@/components/CallToAction';
@@ -43,7 +44,7 @@ const AboutUsPage: React.FC = () => {
                 <img 
                   src="/lovable-uploads/297a916a-73bb-4525-bee8-cf3f47ee0f0d.png" 
                   alt="Marenco Kemp" 
-                  className="w-32 h-32 md:w-40 md:h-40 object-cover rounded-full shadow-lg mb-4"
+                  className="w-32 h-32 md:w-40 md:h-40 object-cover rounded-lg shadow-lg mb-4"
                 />
                 <h4 className="font-semibold text-brand-navy text-xl mb-2">Marenco Kemp</h4>
                 <p className="text-gray-600 leading-relaxed">Marenco has over 20 years of experience in analytics, product, and commercial leadership roles at companies like Google and Microsoft. He resides in Amsterdam with his wife, daughter and two whippets</p>
@@ -52,7 +53,7 @@ const AboutUsPage: React.FC = () => {
                 <img 
                   src="/lovable-uploads/909fa713-0586-4802-89c8-f1a9871b7be8.png" 
                   alt="Andy Bibby" 
-                  className="w-32 h-32 md:w-40 md:h-40 object-cover rounded-full shadow-lg mb-4"
+                  className="w-32 h-32 md:w-40 md:h-40 object-cover rounded-lg shadow-lg mb-4"
                 />
                 <h4 className="font-semibold text-brand-navy text-xl mb-2">Andy Bibby</h4>
                 <p className="text-gray-600 leading-relaxed">Andy has extensive digital marketing and advertising experience. He is a technologist by training and has held senior roles at Razorfish (Publicis), as well as Microsoft Advertising where he led the global WPP relationship. He lives outside London and is a keen cyclist.</p>
