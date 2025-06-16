@@ -24,10 +24,10 @@ const HomePage: React.FC = () => {
       <PageSection className="bg-gradient-to-br from-brand-navy to-blue-900 text-brand-white text-center overflow-hidden">
         <div className="relative z-10">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 !text-brand-white transform transition-all duration-1000 animate-[fadeInUp_0.8s_ease-out_forwards] opacity-0 translate-y-8">
-            Control Your AI Narrative
+            AI Brand Perception. Decoded.
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-gray-300 transform transition-all duration-1000 animate-[fadeInUp_0.8s_ease-out_0.2s_forwards] opacity-0 translate-y-8">
-            Is Your Brand Invisible to AI? Understand and influence how AI models see your brand.
+            Brandweave reveals how AI interprets your brand and how to shape the narrative.
           </p>
           
           {/* Logo Row */}
