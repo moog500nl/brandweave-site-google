@@ -1,7 +1,9 @@
+
 import React from 'react';
 import PageSection from '@/components/PageSection';
 import CallToAction from '@/components/CallToAction';
 import { Users, Award, Lightbulb } from 'lucide-react';
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 import usePageMetadata from '@/hooks/usePageMetadata';
 
 const AboutUsPage: React.FC = () => {
@@ -43,17 +45,26 @@ const AboutUsPage: React.FC = () => {
           <div className="bg-brand-lightGray p-8 rounded-lg shadow-md">
              <Users size={64} className="text-brand-navy mx-auto mb-4" />
             <h3 className="text-2xl font-semibold text-brand-navy text-center">Meet the Founders</h3>
-            <p className="text-gray-600 text-center mt-2 mb-4">
-              (Founder photos and detailed biographies will be here.)
-            </p>
-            <div className="space-y-3">
-              <div className="bg-white p-4 rounded shadow">
-                <h4 className="font-semibold text-brand-navy">Marenco Kemp</h4>
-                <p className="text-sm text-gray-500">Extensive experience at world-leading companies like Google, Microsoft, and Uber.</p>
+            <div className="space-y-6 mt-6">
+              <div className="bg-white p-6 rounded shadow flex items-center space-x-4">
+                <Avatar className="h-20 w-20">
+                  <AvatarImage src="/lovable-uploads/909fa713-0586-4802-89c8-f1a9871b7be8.png" alt="Marenco Kemp" />
+                  <AvatarFallback>MK</AvatarFallback>
+                </Avatar>
+                <div>
+                  <h4 className="font-semibold text-brand-navy text-lg">Marenco Kemp</h4>
+                  <p className="text-sm text-gray-500">Extensive experience at world-leading companies like Google, Microsoft, and Uber.</p>
+                </div>
               </div>
-              <div className="bg-white p-4 rounded shadow">
-                <h4 className="font-semibold text-brand-navy">Andy Bibby</h4>
-                <p className="text-sm text-gray-500">Decades of expertise in digital strategy and brand management at global enterprises.</p>
+              <div className="bg-white p-6 rounded shadow flex items-center space-x-4">
+                <Avatar className="h-20 w-20">
+                  <AvatarImage src="/lovable-uploads/297a916a-73bb-4525-bee8-cf3f47ee0f0d.png" alt="Andy Bibby" />
+                  <AvatarFallback>AB</AvatarFallback>
+                </Avatar>
+                <div>
+                  <h4 className="font-semibold text-brand-navy text-lg">Andy Bibby</h4>
+                  <p className="text-sm text-gray-500">Decades of expertise in digital strategy and brand management at global enterprises.</p>
+                </div>
               </div>
             </div>
           </div>
