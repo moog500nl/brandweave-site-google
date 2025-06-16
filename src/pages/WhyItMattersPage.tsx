@@ -1,14 +1,30 @@
+
 import React from 'react';
 import PageSection from '@/components/PageSection';
 import CallToAction from '@/components/CallToAction';
 import PlaceholderChart from '@/components/PlaceholderChart';
-import usePageMetadata from '@/hooks/usePageMetadata'; // Import the hook
+import { ChartContainer, ChartTooltip, ChartTooltipContent } from '@/components/ui/chart';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, ResponsiveContainer } from 'recharts';
+import usePageMetadata from '@/hooks/usePageMetadata';
 
 const WhyItMattersPage: React.FC = () => {
   usePageMetadata(
     "Why AI Brand Perception Matters Now | Brandweave AI",
     "AI is reshaping brand discovery. Learn why understanding your AI brand perception is crucial for visibility and growth in a 'zero-click' search world. Brandweave AI explains."
   );
+
+  const aiAdoptionData = [
+    { period: 'May 2023', share: 26, type: 'actual' },
+    { period: 'May 2024', share: 38, type: 'actual' },
+    { period: 'May 2025', share: 49, type: 'actual' },
+    { period: 'May 2026', share: 55, type: 'forecast' }
+  ];
+
+  const chartConfig = {
+    share: {
+      label: "Share of UK Adults (%)",
+    },
+  };
 
   return (
     <div className="animate-fade-in">
@@ -25,7 +41,38 @@ const WhyItMattersPage: React.FC = () => {
               <p className="text-lg text-gray-700 mb-6">
                 Adoption is set to be nearly 50% by the end of 2025. This seismic shift means your audience is increasingly turning to AI for information.
               </p>
-              <PlaceholderChart title="UK Adults Who Have Used Generative AI Tools" />
+              <div className="bg-white p-6 rounded-lg shadow-lg">
+                <h3 className="text-xl font-semibold mb-4 text-center text-brand-navy">UK Adults Who Have Used Generative AI Tools</h3>
+                <ChartContainer config={chartConfig} className="h-80">
+                  <BarChart data={aiAdoptionData} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <XAxis 
+                      dataKey="period" 
+                      tick={{ fontSize: 12 }}
+                    />
+                    <YAxis 
+                      tick={{ fontSize: 12 }}
+                      label={{ value: 'Share of UK Adults (%)', angle: -90, position: 'insideLeft' }}
+                    />
+                    <ChartTooltip content={<ChartTooltipContent />} />
+                    <Bar 
+                      dataKey="share" 
+                      fill={(entry) => entry.type === 'forecast' ? '#FF8C00' : '#1a365d'}
+                      radius={[4, 4, 0, 0]}
+                    />
+                  </BarChart>
+                </ChartContainer>
+                <div className="flex justify-center mt-4 space-x-6 text-sm">
+                  <div className="flex items-center">
+                    <div className="w-4 h-4 bg-brand-navy mr-2 rounded"></div>
+                    <span>Share of UK Adults (%)</span>
+                  </div>
+                  <div className="flex items-center">
+                    <div className="w-4 h-4 bg-brand-orange mr-2 rounded"></div>
+                    <span>Forecast</span>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div>
