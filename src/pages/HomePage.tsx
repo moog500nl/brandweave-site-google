@@ -1,9 +1,10 @@
+
 import React from 'react';
 import PageSection from '@/components/PageSection';
 import CallToAction from '@/components/CallToAction';
 import PlaceholderChart from '@/components/PlaceholderChart';
 import { CheckCircle } from 'lucide-react';
-import usePageMetadata from '@/hooks/usePageMetadata'; // Import the hook
+import usePageMetadata from '@/hooks/usePageMetadata';
 
 const HomePage: React.FC = () => {
   usePageMetadata(
@@ -28,6 +29,16 @@ const HomePage: React.FC = () => {
         <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-gray-300">
           Is Your Brand Invisible to AI? Understand and influence how AI models see your brand.
         </p>
+        
+        {/* Google Logo */}
+        <div className="mb-8">
+          <img 
+            src="/lovable-uploads/478d9acb-1b95-45d6-9355-043f8a18aef7.png" 
+            alt="Google Logo" 
+            className="mx-auto h-12 md:h-16 lg:h-20 opacity-90"
+          />
+        </div>
+        
         <div className="space-x-0 space-y-4 md:space-y-0 md:space-x-4">
           <CallToAction to="/ai-audit" text="Learn About The Audit" variant="primary" />
           <CallToAction to="/why-it-matters" text="Why This Matters Now" variant="outline" />
