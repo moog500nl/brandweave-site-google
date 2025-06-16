@@ -35,17 +35,17 @@ const HomePage: React.FC = () => {
           <img 
             src="/lovable-uploads/478d9acb-1b95-45d6-9355-043f8a18aef7.png" 
             alt="Google Logo" 
-            className="h-12 md:h-16 lg:h-20 opacity-90"
+            className="h-8 md:h-10 lg:h-12 opacity-90"
           />
           <img 
             src="/lovable-uploads/289933b9-18b5-4ab7-bb8a-ba65cb34cf07.png" 
             alt="Logo" 
-            className="h-12 md:h-16 lg:h-20 opacity-90"
+            className="h-8 md:h-10 lg:h-12 opacity-90"
           />
           <img 
             src="/lovable-uploads/0d170c73-2163-4c71-aac2-d976d801a76d.png" 
             alt="Logo" 
-            className="h-12 md:h-16 lg:h-20 opacity-90"
+            className="h-8 md:h-10 lg:h-12 opacity-90"
           />
         </div>
         
