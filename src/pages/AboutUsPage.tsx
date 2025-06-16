@@ -47,7 +47,7 @@ const AboutUsPage: React.FC = () => {
                   className="w-32 h-48 md:w-40 md:h-60 object-cover rounded-lg shadow-lg mb-4"
                 />
                 <h4 className="font-semibold text-brand-navy text-xl mb-2">Marenco Kemp</h4>
-                <p className="text-gray-600 leading-relaxed">With over two decades of leadership experience forged at pioneering companies like Google and Microsoft, Marenco has a proven track record in analytics and product development. at Microsoft Advertising, he built the company's first analytics function outside of the US, and while at YouTube, his work was recognised with the prestigious annual Platinum Award. He lives in Amsterdam with his wife, daughter, and two whippets.</p>
+                <p className="text-gray-600 leading-relaxed">With over two decades of leadership experience forged at pioneering companies like Google and Microsoft, Marenco has a proven track record in analytics and product development. At Microsoft Advertising, he built the company's first analytics function outside of the US, and while at YouTube, his work was recognised with the prestigious annual Platinum Award. He lives in Amsterdam with his wife, daughter, and two whippets.</p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow flex flex-col items-center text-center">
                 <img 
