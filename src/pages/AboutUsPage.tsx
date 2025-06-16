@@ -56,7 +56,7 @@ const AboutUsPage: React.FC = () => {
                   className="w-32 h-48 md:w-40 md:h-60 object-cover rounded-lg shadow-lg mb-4"
                 />
                 <h4 className="font-semibold text-brand-navy text-xl mb-2">Andy Bibby</h4>
-                <p className="text-gray-600 leading-relaxed">Andy has extensive experience in digital marketing and advertising. A technologist by training, he has held senior roles at Razorfish (Publicis) and Microsoft Advertising, where he led the global WPP relationship. He lives outside London and is a keen cyclist.</p>
+                <p className="text-gray-600 leading-relaxed">A seasoned expert in digital marketing and advertising, Andy has a proven track record of leadership at top-tier organisations like Razorfish (Publicis) and Microsoft Advertising. His ability to merge technical knowledge with commercial strategy culminated in him leading the global WPP relationship for Microsoft. Grounded by his training as a technologist, Andy brings a uniquely analytical and strategic approach to his work. He is a keen cyclist and resides just outside London.</p>
               </div>
             </div>
           </div>
