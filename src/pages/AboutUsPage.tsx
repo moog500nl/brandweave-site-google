@@ -1,4 +1,3 @@
-
 import React from 'react';
 import PageSection from '@/components/PageSection';
 import CallToAction from '@/components/CallToAction';
@@ -20,7 +19,7 @@ const AboutUsPage: React.FC = () => {
 
   return (
     <div className="animate-fade-in">
-      <section className="py-8 md:py-12">
+      <section className="py-2 md:py-4">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <div className="flex justify-center mb-6">
