@@ -1,3 +1,4 @@
+
 import React from 'react';
 import PageSection from '@/components/PageSection';
 import CallToAction from '@/components/CallToAction';
@@ -51,9 +52,9 @@ const WhyItMattersPage: React.FC = () => {
               <p className="text-lg text-gray-700 mb-6">
                 Adoption is set to be nearly 50% by the end of 2025. This seismic shift means your audience is increasingly turning to AI for information.
               </p>
-              <div className="bg-white p-6 rounded-lg shadow-lg">
-                <ChartContainer config={chartConfig} className="h-80 font-sans">
-                  <BarChart data={aiAdoptionData} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
+              <div className="bg-white p-4 md:p-6 rounded-lg shadow-lg">
+                <ChartContainer config={chartConfig} className="h-64 md:h-80 font-sans">
+                  <BarChart data={aiAdoptionData} margin={{ top: 20, right: 20, left: 10, bottom: 5 }}>
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis 
                       dataKey="period" 
@@ -71,7 +72,7 @@ const WhyItMattersPage: React.FC = () => {
                     </Bar>
                   </BarChart>
                 </ChartContainer>
-                <div className="flex justify-center mt-4 space-x-6 text-sm">
+                <div className="flex justify-center mt-4 space-x-4 md:space-x-6 text-sm">
                   <div className="flex items-center">
                     <div className="w-4 h-4 bg-brand-navy mr-2 rounded"></div>
                     <span>Share of UK Adults (%)</span>
