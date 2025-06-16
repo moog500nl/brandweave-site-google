@@ -47,7 +47,7 @@ const AboutUsPage: React.FC = () => {
             <div className="space-y-6 mt-6">
               <div className="bg-white p-6 rounded shadow flex items-center space-x-4">
                 <img 
-                  src="/lovable-uploads/909fa713-0586-4802-89c8-f1a9871b7be8.png" 
+                  src="/lovable-uploads/297a916a-73bb-4525-bee8-cf3f47ee0f0d.png" 
                   alt="Marenco Kemp" 
                   className="w-20 h-20 object-cover rounded-lg shadow-sm"
                 />
@@ -58,7 +58,7 @@ const AboutUsPage: React.FC = () => {
               </div>
               <div className="bg-white p-6 rounded shadow flex items-center space-x-4">
                 <img 
-                  src="/lovable-uploads/297a916a-73bb-4525-bee8-cf3f47ee0f0d.png" 
+                  src="/lovable-uploads/909fa713-0586-4802-89c8-f1a9871b7be8.png" 
                   alt="Andy Bibby" 
                   className="w-20 h-20 object-cover rounded-lg shadow-sm"
                 />
