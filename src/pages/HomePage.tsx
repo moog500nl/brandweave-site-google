@@ -42,6 +42,11 @@ const HomePage: React.FC = () => {
             alt="Logo" 
             className="h-12 md:h-16 lg:h-20 opacity-90"
           />
+          <img 
+            src="/lovable-uploads/0d170c73-2163-4c71-aac2-d976d801a76d.png" 
+            alt="Logo" 
+            className="h-12 md:h-16 lg:h-20 opacity-90"
+          />
         </div>
         
         <div className="space-x-0 space-y-4 md:space-y-0 md:space-x-4">
