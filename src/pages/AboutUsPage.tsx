@@ -53,7 +53,7 @@ const AboutUsPage: React.FC = () => {
                 />
                 <div>
                   <h4 className="font-semibold text-brand-navy text-lg">Marenco Kemp</h4>
-                  <p className="text-sm text-gray-500">Extensive experience at world-leading companies like Google, Microsoft, and Uber.</p>
+                  <p className="text-sm text-gray-500">Marenco has over 20 years of experience in analytics, product, and commercial leadership roles at companies like Google and Microsoft. He resides in Amsterdam with his wife, daughter and two whippets</p>
                 </div>
               </div>
               <div className="bg-white p-6 rounded shadow flex items-center space-x-4">
