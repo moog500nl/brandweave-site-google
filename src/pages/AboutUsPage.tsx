@@ -22,7 +22,13 @@ const AboutUsPage: React.FC = () => {
     <div className="animate-fade-in">
       <PageSection>
         <div className="text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-brand-navy">About Brandweave AI</h1>
+          <div className="flex justify-center mb-6">
+            <img 
+              src="/lovable-uploads/5b821185-5349-41f3-8c0f-4245b2cb373a.png" 
+              alt="Brandweave AI" 
+              className="h-20 md:h-24 w-auto"
+            />
+          </div>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto mb-12">
             Navigating the new rules of brand discovery in an AI-first world.
           </p>
