@@ -36,31 +36,26 @@ const AboutUsPage: React.FC = () => {
 
           {/* Meet the Founders */}
           <div className="bg-brand-lightGray p-8 rounded-lg shadow-md mb-16">
-             <Users size={64} className="text-brand-navy mx-auto mb-4" />
-            <h3 className="text-2xl font-semibold text-brand-navy text-center">Meet the Founders</h3>
-            <div className="space-y-6 mt-6">
-              <div className="bg-white p-6 rounded shadow flex items-center space-x-4">
+            <Users size={64} className="text-brand-navy mx-auto mb-4" />
+            <h3 className="text-2xl font-semibold text-brand-navy text-center mb-8">Meet the Founders</h3>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-white p-6 rounded-lg shadow flex flex-col items-center text-center">
                 <img 
                   src="/lovable-uploads/297a916a-73bb-4525-bee8-cf3f47ee0f0d.png" 
                   alt="Marenco Kemp" 
-                  className="w-20 h-20 object-cover rounded-lg shadow-sm"
+                  className="w-32 h-32 md:w-40 md:h-40 object-cover rounded-full shadow-lg mb-4"
                 />
-                <div>
-                  <h4 className="font-semibold text-brand-navy text-lg">Marenco Kemp</h4>
-                  <p className="text-sm text-gray-500">Marenco has over 20 years of experience in analytics, product, and commercial leadership roles at companies like Google and Microsoft. He resides in Amsterdam with his wife, daughter and two whippets</p>
-                </div>
+                <h4 className="font-semibold text-brand-navy text-xl mb-2">Marenco Kemp</h4>
+                <p className="text-gray-600 leading-relaxed">Marenco has over 20 years of experience in analytics, product, and commercial leadership roles at companies like Google and Microsoft. He resides in Amsterdam with his wife, daughter and two whippets</p>
               </div>
-              <div className="bg-white p-6 rounded shadow flex items-center space-x-4">
+              <div className="bg-white p-6 rounded-lg shadow flex flex-col items-center text-center">
                 <img 
                   src="/lovable-uploads/909fa713-0586-4802-89c8-f1a9871b7be8.png" 
                   alt="Andy Bibby" 
-                  className="w-20 h-20 object-cover rounded-lg shadow-sm"
+                  className="w-32 h-32 md:w-40 md:h-40 object-cover rounded-full shadow-lg mb-4"
                 />
-                <div>
-                  <h4 className="font-semibold text-brand-navy text-lg">Andy Bibby</h4>
-                  <p className="text-sm text-gray-500">Andy has extensive digital marketing and advertising experience.  He is a technologist by training and has held senior roles at Razorfish (Publicis), as well as Microsoft Advertising where he led the global WPP relationship.  He lives outside London and is a keen cyclist.
-</p>
-                </div>
+                <h4 className="font-semibold text-brand-navy text-xl mb-2">Andy Bibby</h4>
+                <p className="text-gray-600 leading-relaxed">Andy has extensive digital marketing and advertising experience. He is a technologist by training and has held senior roles at Razorfish (Publicis), as well as Microsoft Advertising where he led the global WPP relationship. He lives outside London and is a keen cyclist.</p>
               </div>
             </div>
           </div>
