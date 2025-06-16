@@ -56,7 +56,7 @@ const AboutUsPage: React.FC = () => {
                   className="w-32 h-48 md:w-40 md:h-60 object-cover rounded-lg shadow-lg mb-4"
                 />
                 <h4 className="font-semibold text-brand-navy text-xl mb-2">Andy Bibby</h4>
-                <p className="text-gray-600 leading-relaxed">Andy has extensive digital marketing and advertising experience. He is a technologist by training and has held senior roles at Razorfish (Publicis), as well as Microsoft Advertising where he led the global WPP relationship. He lives outside London and is a keen cyclist.</p>
+                <p className="text-gray-600 leading-relaxed">Andy has extensive experience in digital marketing and advertising. A technologist by training, he has held senior roles at Razorfish (Publicis) and Microsoft Advertising, where he led the global WPP relationship. He lives outside London and is a keen cyclist.</p>
               </div>
             </div>
           </div>
