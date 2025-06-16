@@ -2,6 +2,7 @@ import React from 'react';
 import PageSection from '@/components/PageSection';
 import CallToAction from '@/components/CallToAction';
 import PlaceholderChart from '@/components/PlaceholderChart';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { CheckCircle } from 'lucide-react';
 import usePageMetadata from '@/hooks/usePageMetadata';
 
@@ -16,6 +17,21 @@ const HomePage: React.FC = () => {
     { title: "Score", description: "Receive a quantifiable Visibility, Sentiment & Trust Scorecard for your brand." },
     { title: "Recommend", description: "Get a clear roadmap of concrete actions to improve your AI brand presence." },
     { title: "Benchmark", description: "See how you stack up against rivals and who the default AI recommendation is." },
+  ];
+
+  const faqs = [
+    {
+      question: "What exactly is an AI Brand Intelligence Audit?",
+      answer: "Our AI Brand Intelligence Audit is a comprehensive analysis that tests how major AI models like ChatGPT, Claude, and Gemini perceive, describe, and recommend your brand. We provide quantifiable scores for visibility, sentiment, and trust, along with actionable recommendations to improve your AI brand presence."
+    },
+    {
+      question: "How long does the audit process take?",
+      answer: "The audit process typically takes 5-7 business days from initiation. This includes comprehensive testing across multiple AI models, analysis of results, competitive benchmarking, and preparation of your detailed report with actionable recommendations."
+    },
+    {
+      question: "Why is AI brand perception important for my business?",
+      answer: "AI is fundamentally changing how customers discover and research brands. As more people rely on AI assistants for recommendations and information, your brand's visibility and perception in these systems directly impacts your future customer acquisition and market position. Being invisible to AI means being invisible to tomorrow's customers."
+    }
   ];
 
   return (
@@ -121,6 +137,36 @@ const HomePage: React.FC = () => {
               <p className="text-gray-600">{step.description}</p>
             </div>
           ))}
+        </div>
+      </PageSection>
+
+      {/* FAQ Section */}
+      <PageSection className="bg-brand-lightGray">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-brand-navy transform transition-all duration-1000 animate-[fadeInUp_0.8s_ease-out_forwards] opacity-0 translate-y-8">
+            Frequently Asked Questions
+          </h2>
+          <div className="transform transition-all duration-1000 animate-[fadeInUp_0.8s_ease-out_0.2s_forwards] opacity-0 translate-y-8">
+            <Accordion type="single" collapsible className="w-full space-y-4">
+              {faqs.map((faq, index) => (
+                <AccordionItem 
+                  key={index} 
+                  value={`item-${index}`} 
+                  className="bg-white rounded-lg shadow-md border-0 overflow-hidden"
+                >
+                  <AccordionTrigger className="px-6 py-4 text-left text-lg font-semibold text-brand-navy hover:bg-gray-50 hover:no-underline">
+                    {faq.question}
+                  </AccordionTrigger>
+                  <AccordionContent className="px-6 pb-4 text-gray-700 leading-relaxed">
+                    {faq.answer}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
+          </div>
+          <div className="text-center mt-12 transform transition-all duration-1000 animate-[fadeInUp_0.8s_ease-out_0.4s_forwards] opacity-0 translate-y-8">
+            <CallToAction to="/pricing-contact" text="Have More Questions? Contact Us" variant="secondary" />
+          </div>
         </div>
       </PageSection>
 
