@@ -47,7 +47,7 @@ const AboutUsPage: React.FC = () => {
                   className="w-32 h-48 md:w-40 md:h-60 object-cover rounded-lg shadow-lg mb-4"
                 />
                 <h4 className="font-semibold text-brand-navy text-xl mb-2">Marenco Kemp</h4>
-                <p className="text-gray-600 leading-relaxed">Marenco has over 20 years of experience in analytics, product, and commercial leadership roles at companies like Google and Microsoft. He resides in Amsterdam with his wife, daughter and two whippets</p>
+                <p className="text-gray-600 leading-relaxed">Marenco brings over two decades of leadership experience forged at pioneering technology companies such as Google and Microsoft. His proven track record covers analytics, product development, and commercial growth. He lives in Amsterdam with his wife, daughter, and two whippets.</p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow flex flex-col items-center text-center">
                 <img 
