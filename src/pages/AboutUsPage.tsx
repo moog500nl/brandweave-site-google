@@ -26,7 +26,7 @@ const AboutUsPage: React.FC = () => {
             <img 
               src="/lovable-uploads/5b821185-5349-41f3-8c0f-4245b2cb373a.png" 
               alt="Brandweave AI" 
-              className="h-20 md:h-24 w-auto"
+              className="h-32 md:h-40 lg:h-48 w-auto"
             />
           </div>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto mb-12">
