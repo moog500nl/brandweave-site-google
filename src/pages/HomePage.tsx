@@ -27,7 +27,7 @@ const HomePage: React.FC = () => {
             AI Brand Perception. Decoded.
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-gray-300 transform transition-all duration-1000 animate-[fadeInUp_0.8s_ease-out_0.2s_forwards] opacity-0 translate-y-8">
-            Brandweave reveals how AI interprets your brand and how to shape the narrative.
+            We reveal how AI interprets your brand and how to shape the narrative.
           </p>
           
           {/* Logo Row */}
