@@ -1,3 +1,4 @@
+
 import React from 'react';
 import PageSection from '@/components/PageSection';
 import CallToAction from '@/components/CallToAction';
@@ -26,7 +27,7 @@ const AboutUsPage: React.FC = () => {
               <img 
                 src="/lovable-uploads/5b821185-5349-41f3-8c0f-4245b2cb373a.png" 
                 alt="Brandweave AI" 
-                className="h-32 md:h-40 lg:h-48 w-auto"
+                className="h-48 md:h-64 lg:h-80 w-auto"
               />
             </div>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto mb-12">
@@ -65,7 +66,6 @@ const AboutUsPage: React.FC = () => {
             </div>
           </div>
 
-          {/* Our Unique Approach */}
           <div className="bg-brand-navy p-8 md:p-12 rounded-lg shadow-xl">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 !text-brand-white">Our Unique Approach</h2>
             <div className="grid md:grid-cols-2 gap-6">
