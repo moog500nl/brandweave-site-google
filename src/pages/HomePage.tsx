@@ -1,4 +1,3 @@
-
 import React from 'react';
 import PageSection from '@/components/PageSection';
 import CallToAction from '@/components/CallToAction';
@@ -51,7 +50,7 @@ const HomePage: React.FC = () => {
           </div>
           
           <div className="space-x-0 space-y-4 md:space-y-0 md:space-x-4 transform transition-all duration-1000 animate-[fadeInUp_0.8s_ease-out_0.6s_forwards] opacity-0 translate-y-8">
-            <CallToAction to="/ai-audit" text="Learn About The Audit" variant="primary" />
+            <CallToAction to="/ai-audit" text="Learn About The Audit" variant="outline" />
             <CallToAction to="/why-it-matters" text="Why This Matters Now" variant="outline" />
           </div>
         </div>
