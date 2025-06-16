@@ -30,12 +30,17 @@ const HomePage: React.FC = () => {
           Is Your Brand Invisible to AI? Understand and influence how AI models see your brand.
         </p>
         
-        {/* Google Logo */}
-        <div className="mb-8">
+        {/* Logo Row */}
+        <div className="mb-8 flex justify-center items-center space-x-8">
           <img 
             src="/lovable-uploads/478d9acb-1b95-45d6-9355-043f8a18aef7.png" 
             alt="Google Logo" 
-            className="mx-auto h-12 md:h-16 lg:h-20 opacity-90"
+            className="h-12 md:h-16 lg:h-20 opacity-90"
+          />
+          <img 
+            src="/lovable-uploads/289933b9-18b5-4ab7-bb8a-ba65cb34cf07.png" 
+            alt="Logo" 
+            className="h-12 md:h-16 lg:h-20 opacity-90"
           />
         </div>
         
