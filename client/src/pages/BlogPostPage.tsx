@@ -1,12 +1,12 @@
 
 import React from 'react';
 import PageSection from '@/components/PageSection';
-import { Link, useParams } from 'react-router-dom';
+import { Link, useParams } from 'wouter';
 import { ArrowLeft } from 'lucide-react';
 import usePageMetadata from '@/hooks/usePageMetadata'; // Import the hook
 
 const BlogPostPage: React.FC = () => {
-  const { slug } = useParams<{ slug: string }>();
+  const { slug } = useParams();
 
   // Placeholder content - in a real app, fetch this based on slug
   const post = {
