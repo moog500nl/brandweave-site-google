@@ -94,7 +94,11 @@ This is a full-stack React application for Brandweave AI, a brand intelligence p
 
 ## Changelog
 
-- June 17, 2025. Initial setup
+- June 17, 2025: Initial setup
+- June 17, 2025: Completed migration from Lovable to Replit
+  - Fixed routing system (React Router → wouter)
+  - Added missing dependencies and custom Tailwind configuration
+  - Added Google Search Console verification file
 
 ## User Preferences
 
