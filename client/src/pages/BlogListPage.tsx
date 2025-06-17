@@ -1,6 +1,6 @@
 import React from 'react';
 import PageSection from '@/components/PageSection';
-import { Link } from 'react-router-dom';
+import { Link } from 'wouter';
 import { Button } from '@/components/ui/button';
 import usePageMetadata from '@/hooks/usePageMetadata'; // Import the hook
 
