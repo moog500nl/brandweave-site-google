@@ -142,7 +142,7 @@ const HomePage: React.FC = () => {
                   />
                   <YAxis 
                     tick={{ fontSize: 12, fontFamily: 'system-ui, sans-serif' }}
-                    label={{ value: 'Number of Brands Considered', angle: -90, position: 'insideLeft', style: { fontFamily: 'system-ui, sans-serif', fontSize: '12px' } }}
+                    label={{ value: 'Number of Brands Considered', angle: -90, position: 'insideLeft', style: { fontFamily: 'system-ui, sans-serif', fontSize: '12px', textAnchor: 'middle' }, offset: -10 }}
                     className="text-sm"
                   />
                   <ChartTooltip />
