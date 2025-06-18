@@ -177,7 +177,7 @@ const HomePage: React.FC = () => {
               <p className="text-lg text-gray-700 max-w-3xl mx-auto mb-8">
                 The definitive way to understand and influence how AI models perceive, describe, and recommend your brand.
               </p>
-              <CallToAction to="/ai-audit" text="Discover Your AI Score" variant="secondary" />
+              <CallToAction to="/ai-audit" text="Explore the Audit" variant="secondary" />
             </div>
           </div>
           
