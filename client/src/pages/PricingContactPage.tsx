@@ -75,7 +75,7 @@ const PricingContactPage: React.FC = () => {
 
           {/* Contact Form Section */}
           <div>
-            <h2 className="text-3xl font-semibold text-brand-navy mb-6 text-center md:text-left">Get in Touch</h2>
+            <h2 className="text-3xl font-semibold text-brand-navy mb-3 text-center md:text-left">Get in Touch</h2>
             <iframe 
               src="https://tally.so/embed/3xogVJ?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" 
               loading="lazy" 
