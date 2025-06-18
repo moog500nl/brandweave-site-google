@@ -106,7 +106,7 @@ This is a full-stack React application for Brandweave AI, a brand intelligence p
   - Replaced blog page title with large vertical Brandweave logo
   - Updated favicon with high-quality PNG files in multiple resolutions (32x32, 64x64, 256x256)
   - Enhanced audit page with detailed four-stage process and comprehensive deliverables section
-  - Added CTR impact line graph to Why It Matters page showing desktop (20%→7%) and mobile (13%→3%) traffic drops with AI Overviews
+  - Added refined CTR impact line graph to Why It Matters page with thin lines showing desktop (20%→7%) and mobile (13%→3%) traffic drops with AI Overviews
 
 ## User Preferences
 

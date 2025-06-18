@@ -168,15 +168,15 @@ const WhyItMattersPage: React.FC = () => {
                             type="monotone" 
                             dataKey="Desktop" 
                             stroke="#14213D" 
-                            strokeWidth={3}
-                            dot={{ fill: "#14213D", strokeWidth: 2, r: 6 }}
+                            strokeWidth={1}
+                            dot={{ fill: "#14213D", strokeWidth: 1, r: 3 }}
                           />
                           <Line 
                             type="monotone" 
                             dataKey="Mobile" 
                             stroke="#FCA311" 
-                            strokeWidth={3}
-                            dot={{ fill: "#FCA311", strokeWidth: 2, r: 6 }}
+                            strokeWidth={1}
+                            dot={{ fill: "#FCA311", strokeWidth: 1, r: 3 }}
                           />
                         </LineChart>
                       </ResponsiveContainer>
