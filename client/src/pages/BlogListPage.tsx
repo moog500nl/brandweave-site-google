@@ -3,6 +3,7 @@ import PageSection from '@/components/PageSection';
 import { Link } from 'wouter';
 import { Button } from '@/components/ui/button';
 import usePageMetadata from '@/hooks/usePageMetadata'; // Import the hook
+import logoVertical from '@assets/v1_logo_vertical_on white or grey (1)_1750245161941.png';
 
 // Placeholder blog posts
 const blogPosts = [
@@ -22,7 +23,7 @@ const BlogListPage: React.FC = () => {
       <PageSection>
         <div className="flex justify-center mb-12">
           <img 
-            src="@assets/v1_logo_vertical_on white or grey (1)_1750245161941.png" 
+            src={logoVertical} 
             alt="Brandweave AI" 
             className="h-32 md:h-40 w-auto"
           />
