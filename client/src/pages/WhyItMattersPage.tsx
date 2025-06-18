@@ -37,7 +37,7 @@ const WhyItMattersPage: React.FC = () => {
 
   const ctrData = [
     { scenario: 'Without AIO', Desktop: 20, Mobile: 13 },
-    { scenario: 'With AIO', Desktop: 3, Mobile: 7 }
+    { scenario: 'With AIO', Desktop: 7, Mobile: 3 }
   ];
 
   const chartConfig = {
