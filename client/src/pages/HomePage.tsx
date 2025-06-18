@@ -163,7 +163,7 @@ const HomePage: React.FC = () => {
             </div>
           </div>
           <p className="text-center mt-6 mb-4 text-gray-600 transform transition-all duration-1000 animate-[fadeInUp_0.8s_ease-out_0.4s_forwards] opacity-0 translate-y-4">
-            Visual representation of how Large Language Models (LLMs) end up mentioning fewer brands than traditional search results, impacting your reach.
+            Visual representation of how Large Language Models (LLMs) end up mentioning fewer brands than traditional search results, potentially impacting your reach.
           </p>
         </PageSection>
 
@@ -177,7 +177,7 @@ const HomePage: React.FC = () => {
               <p className="text-lg text-gray-700 max-w-3xl mx-auto mb-8">
                 The definitive way to understand and influence how AI models perceive, describe, and recommend your brand.
               </p>
-              <CallToAction to="/ai-audit" text="Explore the Audit" variant="secondary" />
+
             </div>
           </div>
           
@@ -208,6 +208,9 @@ const HomePage: React.FC = () => {
                 <p className="text-gray-600">{step.description}</p>
               </div>
             ))}
+          </div>
+          <div className="text-center mt-12 transform transition-all duration-1000 animate-[fadeInUp_0.8s_ease-out_0.6s_forwards] opacity-0 translate-y-8">
+            <CallToAction to="/ai-audit" text="Explore the Audit" variant="secondary" />
           </div>
         </PageSection>
 

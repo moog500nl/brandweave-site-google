@@ -99,6 +99,8 @@ This is a full-stack React application for Brandweave AI, a brand intelligence p
   - Fixed routing system (React Router → wouter)
   - Added missing dependencies and custom Tailwind configuration
   - Added Google Search Console verification file
+  - Replaced placeholder chart with double bar graph showing sales funnel compression
+  - Updated homepage button positioning and text
 
 ## User Preferences
 
