@@ -1,0 +1,28 @@
+How the Audit is Carried Out: Our Four-Stage Process
+
+Every audit is a bespoke project led by one of our founders, where we take the time to understand your specific brand, strategies, and challenges. Our analysis follows a transparent, four-stage methodology:
+
+1. Interrogate Leading LLMs
+Based on your business objectives, we use our proprietary platform to analyse the outputs and "thought patterns" of top AI models. This systematic process reveals the exact criteria and sources the models are using to form their recommendations about your brand and your competitors. We test for consistency across different phrasing styles, the influence of prompt context on brand mentions, and the stability of brand rankings over time.
+
+
+2. Benchmark Against Your Rivals
+We generate a competitive tier table that shows which of your rivals is the default recommendation in your category and, crucially, explains why. This allows you to clearly see your ranking against both incumbent and challenger brands and understand the specific data gaps or content issues affecting your position.
+
+
+3. Deliver Your Visibility, Sentiment & Trust Scorecard
+You receive a trackable scorecard that measures your brand's performance across three critical AI metrics: Visibility, Sentiment, and Trust. This scorecard quantifies your position, shows the gap between you and the category leader, and provides a trend line so you can easily measure progress over time as you implement changes.
+
+
+4. Provide Actionable Recommendations
+We translate the AI insights into concrete actions your teams can use to shape future outcomes. The audit report provides a high-level roadmap with clear recommendations designed to improve your score. Wherever possible, we link these actions directly to measurable ROI.
+
+
+What is in the Audit Report?
+Upon completion, you will receive a comprehensive package giving your team a clear path forward.
+
+An Executive PDF Report: A detailed ~30-page report containing the full analysis, findings, and strategic roadmap.
+Data & Methodology Appendix: A separate ~60-page document that provides full transparency into our methodology and the data used in the audit.
+Competitor Scorecard: A direct comparison of your brand's performance against your key competitors.
+Team Recommendations: Specific, actionable recommendations for your marketing and product teams to implement.
+Ongoing Tracking (Optional): The option for quarterly or monthly updates to track your progress and monitor the competitive landscape.

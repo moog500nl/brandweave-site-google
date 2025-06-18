@@ -12,16 +12,49 @@ const AiAuditPage: React.FC = () => {
   );
 
   const processSteps = [
-    { icon: Brain, title: "Interrogate Top LLMs", description: "We analyse AI outputs and thought patterns to understand how leading models perceive your brand." },
-    { icon: BarChart2, title: "Benchmark vs Rivals", description: "We show you who the default recommendation is in your category and, critically, why." },
-    { icon: ListChecks, title: "Visibility, Sentiment & Trust Scorecard", description: "Receive a quantifiable, trackable score for your brand's AI presence against competitors." },
-    { icon: FileText, title: "Actionable Recommendations", description: "We translate complex insights into a clear roadmap of concrete actions for your teams." },
+    { 
+      icon: Brain, 
+      title: "1. Interrogate Leading LLMs", 
+      description: "Based on your business objectives, we use our proprietary platform to analyse the outputs and 'thought patterns' of top AI models. This systematic process reveals the exact criteria and sources the models are using to form their recommendations about your brand and your competitors. We test for consistency across different phrasing styles, the influence of prompt context on brand mentions, and the stability of brand rankings over time."
+    },
+    { 
+      icon: BarChart2, 
+      title: "2. Benchmark Against Your Rivals", 
+      description: "We generate a competitive tier table that shows which of your rivals is the default recommendation in your category and, crucially, explains why. This allows you to clearly see your ranking against both incumbent and challenger brands and understand the specific data gaps or content issues affecting your position."
+    },
+    { 
+      icon: ListChecks, 
+      title: "3. Deliver Your Visibility, Sentiment & Trust Scorecard", 
+      description: "You receive a trackable scorecard that measures your brand's performance across three critical AI metrics: Visibility, Sentiment, and Trust. This scorecard quantifies your position, shows the gap between you and the category leader, and provides a trend line so you can easily measure progress over time as you implement changes."
+    },
+    { 
+      icon: FileText, 
+      title: "4. Provide Actionable Recommendations", 
+      description: "We translate the AI insights into concrete actions your teams can use to shape future outcomes. The audit report provides a high-level roadmap with clear recommendations designed to improve your score. Wherever possible, we link these actions directly to measurable ROI."
+    },
   ];
 
   const deliverables = [
-    "Executive PDF report (≈30 pages) with a full data appendix.",
-    "Scorecard comparing your brand against key competitors on critical AI metrics.",
-    "Actionable recommendations tailored for your marketing and product teams to enhance AI visibility and sentiment.",
+    { 
+      title: "An Executive PDF Report", 
+      description: "A detailed ~30-page report containing the full analysis, findings, and strategic roadmap."
+    },
+    { 
+      title: "Data & Methodology Appendix", 
+      description: "A separate ~60-page document that provides full transparency into our methodology and the data used in the audit."
+    },
+    { 
+      title: "Competitor Scorecard", 
+      description: "A direct comparison of your brand's performance against your key competitors."
+    },
+    { 
+      title: "Team Recommendations", 
+      description: "Specific, actionable recommendations for your marketing and product teams to implement."
+    },
+    { 
+      title: "Ongoing Tracking (Optional)", 
+      description: "The option for quarterly or monthly updates to track your progress and monitor the competitive landscape."
+    },
   ];
 
   const faqs = [
@@ -46,32 +79,43 @@ const AiAuditPage: React.FC = () => {
           The AI Brand Intelligence Audit
         </h1>
         <p className="text-xl text-center text-gray-700 max-w-3xl mx-auto mb-12">
-          An expert-led, evidence-based assessment of how Large Language Models (LLMs) surface, describe, and recommend your brand.
+          An expert-led, evidence-based assessment of how Large Language Models (LLMs) surface, describe, and recommend your brand. Every audit is a bespoke project led by one of our founders, where we take the time to understand your specific brand, strategies, and challenges.
         </p>
 
         {/* Our Process */}
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-brand-navy">Our Process</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-brand-navy">How the Audit is Carried Out: Our Four-Stage Process</h2>
+        <p className="text-lg text-center text-gray-700 max-w-4xl mx-auto mb-12">
+          Our analysis follows a transparent, four-stage methodology that provides deep insights into how AI models perceive and recommend your brand.
+        </p>
         <div className="grid md:grid-cols-2 gap-8 mb-16">
           {processSteps.map((step, index) => (
-            <div key={index} className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col items-center text-center">
-              <step.icon size={48} className="text-brand-orange mb-4" />
-              <h3 className="text-2xl font-semibold text-brand-navy mb-3">{step.title}</h3>
-              <p className="text-gray-600">{step.description}</p>
+            <div key={index} className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col items-start text-left">
+              <div className="flex items-center mb-4">
+                <step.icon size={32} className="text-brand-orange mr-3" />
+                <h3 className="text-xl font-semibold text-brand-navy">{step.title}</h3>
+              </div>
+              <p className="text-gray-600 leading-relaxed">{step.description}</p>
             </div>
           ))}
         </div>
 
         {/* What You Receive */}
         <div className="bg-brand-lightGray p-8 md:p-12 rounded-lg shadow-lg">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-brand-navy">What You Receive</h2>
-          <ul className="space-y-4 max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-brand-navy">What is in the Audit Report?</h2>
+          <p className="text-lg text-center text-gray-700 max-w-4xl mx-auto mb-8">
+            Upon completion, you will receive a comprehensive package giving your team a clear path forward.
+          </p>
+          <div className="space-y-6 max-w-4xl mx-auto">
             {deliverables.map((item, index) => (
-              <li key={index} className="flex items-start">
-                <CheckCircle className="h-6 w-6 text-green-500 mr-3 mt-1 flex-shrink-0" />
-                <p className="text-lg text-gray-700">{item}</p>
-              </li>
+              <div key={index} className="flex items-start">
+                <CheckCircle className="h-6 w-6 text-green-500 mr-4 mt-1 flex-shrink-0" />
+                <div>
+                  <h3 className="text-lg font-semibold text-brand-navy mb-2">{item.title}</h3>
+                  <p className="text-gray-700">{item.description}</p>
+                </div>
+              </div>
             ))}
-          </ul>
+          </div>
           <div className="text-center mt-12">
             <CallToAction to="/pricing-contact" text="View Pricing and Get Started" variant="primary" />
           </div>
