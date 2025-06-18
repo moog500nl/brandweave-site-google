@@ -45,10 +45,10 @@ const HomePage: React.FC = () => {
   };
 
   const howItWorksSteps = [
-    { title: "Analyse", description: "We interrogate top LLMs to understand their outputs and thought patterns regarding your brand." },
-    { title: "Score", description: "Receive a quantifiable Visibility, Sentiment & Trust Scorecard for your brand." },
-    { title: "Recommend", description: "Get a clear roadmap of concrete actions to improve your AI brand presence." },
-    { title: "Benchmark", description: "See how you stack up against rivals and who the default AI recommendation is." },
+    { title: "Interrogate Top LLMs", description: "We analyse AI outputs and thought patterns to understand how leading models perceive your brand." },
+    { title: "Benchmark vs Rivals", description: "We show you who the default recommendation is in your category and, critically, why." },
+    { title: "Visibility, Sentiment & Trust Scorecard", description: "Receive a quantifiable, trackable score for your brand's AI presence against competitors" },
+    { title: "Benchmark", description: "We translate complex insights into a clear roadmap of concrete actions for your teams" },
   ];
 
 
