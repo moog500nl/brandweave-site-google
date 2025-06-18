@@ -35,9 +35,29 @@ const PricingContactPage: React.FC = () => {
               <span className="text-5xl font-bold text-brand-orange">£5,000</span>
               <span className="text-lg text-gray-600"> / per Audit Report</span>
             </div>
-            <p className="text-gray-700 mb-4">
-              This includes a comprehensive analysis, executive PDF report (≈30 pages) with full data appendix, competitor scorecard, and actionable recommendations.
-            </p>
+            <div className="mb-6">
+              <ul className="space-y-4 text-gray-700">
+                <li>
+                  <strong className="text-brand-navy">An Executive PDF Report</strong>
+                  <p className="text-sm ml-4 mt-1">A detailed ~30-page report containing the full analysis, findings, and strategic roadmap.</p>
+                </li>
+                <li>
+                  <strong className="text-brand-navy">Data & Methodology Appendix</strong>
+                  <p className="text-sm ml-4 mt-1">A separate ~60-page document that provides full transparency into our methodology and the data used in the audit.</p>
+                </li>
+                <li>
+                  <strong className="text-brand-navy">Competitor Scorecard</strong>
+                  <p className="text-sm ml-4 mt-1">A direct comparison of your brand's performance against your key competitors.</p>
+                </li>
+                <li>
+                  <strong className="text-brand-navy">Team Recommendations</strong>
+                  <p className="text-sm ml-4 mt-1">Specific, actionable recommendations for your marketing and product teams to implement.</p>
+                </li>
+                <li>
+                  <strong className="text-brand-navy">Ongoing Tracking (Optional)</strong>
+                </li>
+              </ul>
+            </div>
             <p className="text-gray-700">
               Options for quarterly or monthly updates are available to continuously track your AI brand presence. Contact us for bespoke packages.
             </p>
