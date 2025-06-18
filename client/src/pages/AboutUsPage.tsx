@@ -25,9 +25,9 @@ const AboutUsPage: React.FC = () => {
           <div className="text-center">
             <div className="flex justify-center mb-6">
               <img 
-                src="/bwlogo.svg" 
+                src="/lovable-uploads/5b821185-5349-41f3-8c0f-4245b2cb373a.png" 
                 alt="Brandweave AI" 
-                className="h-24 md:h-32 lg:h-40 w-auto"
+                className="h-48 md:h-64 lg:h-80 w-auto"
               />
             </div>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto mb-12">

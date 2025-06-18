@@ -103,7 +103,6 @@ This is a full-stack React application for Brandweave AI, a brand intelligence p
   - Updated homepage button positioning and text
   - Moved FAQ section from homepage to bottom of Audit page
   - Added "Explore the Risk" button below chart on homepage linking to Why It Matters page
-  - Added Brandweave logo to About page and Blog page headers
 
 ## User Preferences
 
