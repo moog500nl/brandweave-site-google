@@ -149,9 +149,12 @@ const HomePage: React.FC = () => {
               </div>
             </div>
           </div>
-          <p className="text-center mt-6 mb-4 text-gray-600 transform transition-all duration-1000 animate-[fadeInUp_0.8s_ease-out_0.4s_forwards] opacity-0 translate-y-4">
+          <p className="text-center mt-6 mb-6 text-gray-600 transform transition-all duration-1000 animate-[fadeInUp_0.8s_ease-out_0.4s_forwards] opacity-0 translate-y-4">
             Visual representation of how Large Language Models (LLMs) end up mentioning fewer brands than traditional search results, potentially impacting your reach.
           </p>
+          <div className="text-center mb-4 transform transition-all duration-1000 animate-[fadeInUp_0.8s_ease-out_0.6s_forwards] opacity-0 translate-y-4">
+            <CallToAction to="/why-it-matters" text="Explore the Risk" variant="secondary" />
+          </div>
         </PageSection>
 
         {/* The Solution, Introduced */}
