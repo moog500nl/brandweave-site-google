@@ -111,6 +111,7 @@ This is a full-stack React application for Brandweave AI, a brand intelligence p
   - Enhanced pricing page with detailed breakdown of audit deliverables under £5,000 figure, removed founders' contact info, fixed text formatting consistency, and added orange checkmark icons to deliverable headings
   - Updated pricing page heading to "Unique and Comprehensive" and subtitle to "Be the Brand AI Trusts and Recommends"
   - Replaced contact form with Tally form embed for better lead capture functionality
+  - Updated homepage "How It Works" sequence to: Analyse, Score, Benchmark, Recommend
 
 ## User Preferences
 
