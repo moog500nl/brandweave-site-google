@@ -1,6 +1,5 @@
 import React from 'react';
 import PageSection from '@/components/PageSection';
-import ContactForm from '@/components/ContactForm';
 import { Mail, CheckCircle } from 'lucide-react';
 import usePageMetadata from '@/hooks/usePageMetadata'; // Import the hook
 
@@ -77,7 +76,14 @@ const PricingContactPage: React.FC = () => {
           {/* Contact Form Section */}
           <div>
             <h2 className="text-3xl font-semibold text-brand-navy mb-6 text-center md:text-left">Get in Touch</h2>
-            <ContactForm />
+            <iframe 
+              data-tally-src="https://tally.so/embed/3xogVJ?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" 
+              loading="lazy" 
+              width="100%" 
+              height="774" 
+              frameBorder="0" 
+              title="Contact form"
+            ></iframe>
           </div>
         </div>
       </PageSection>
