@@ -1,7 +1,7 @@
 import React from 'react';
 import PageSection from '@/components/PageSection';
 import ContactForm from '@/components/ContactForm';
-import { Mail, ExternalLink } from 'lucide-react';
+import { Mail } from 'lucide-react';
 import usePageMetadata from '@/hooks/usePageMetadata'; // Import the hook
 
 const PricingContactPage: React.FC = () => {
@@ -10,10 +10,7 @@ const PricingContactPage: React.FC = () => {
     "Get transparent pricing for our comprehensive AI Brand Intelligence Audit. Contact Brandweave AI founders to start improving your brand's AI presence."
   );
 
-  const founders = [
-    { name: "Marenco Kemp", email: "marenco@brandweave.ai" }, // Replace with actual emails
-    { name: "Andy Bibby", email: "andy@brandweave.ai" },     // Replace with actual emails
-  ];
+
 
   return (
     <div className="animate-fade-in">
@@ -61,18 +58,7 @@ const PricingContactPage: React.FC = () => {
             <p className="text-gray-700">
               Options for quarterly or monthly updates are available to continuously track your AI brand presence. Contact us for bespoke packages.
             </p>
-            <div className="mt-8 text-center">
-              <p className="text-lg font-semibold text-brand-navy">Contact our founders directly:</p>
-              <ul className="mt-2 space-y-1">
-                {founders.map(founder => (
-                  <li key={founder.name}>
-                    <a href={`mailto:${founder.email}`} className="text-brand-navy hover:text-brand-orange flex items-center justify-center">
-                       {founder.name}: {founder.email} <ExternalLink size={16} className="ml-1"/>
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
+
           </div>
 
           {/* Contact Form Section */}
