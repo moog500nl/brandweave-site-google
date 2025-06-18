@@ -1,7 +1,7 @@
 import React from 'react';
 import PageSection from '@/components/PageSection';
 import ContactForm from '@/components/ContactForm';
-import { Mail } from 'lucide-react';
+import { Mail, CheckCircle } from 'lucide-react';
 import usePageMetadata from '@/hooks/usePageMetadata'; // Import the hook
 
 const PricingContactPage: React.FC = () => {
@@ -34,25 +34,40 @@ const PricingContactPage: React.FC = () => {
             </div>
             <div className="mb-6">
               <ul className="space-y-4 text-gray-700">
-                <li>
-                  <strong className="text-brand-navy">An Executive PDF Report</strong>
-                  <p className="text-sm ml-4 mt-1">A detailed ~30-page report containing the full analysis, findings, and strategic roadmap.</p>
+                <li className="flex items-start">
+                  <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
+                  <div>
+                    <strong className="text-brand-navy">An Executive PDF Report</strong>
+                    <p className="text-sm mt-1">A detailed ~30-page report containing the full analysis, findings, and strategic roadmap.</p>
+                  </div>
                 </li>
-                <li>
-                  <strong className="text-brand-navy">Data & Methodology Appendix</strong>
-                  <p className="text-sm ml-4 mt-1">A separate ~60-page document that provides full transparency into our methodology and the data used in the audit.</p>
+                <li className="flex items-start">
+                  <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
+                  <div>
+                    <strong className="text-brand-navy">Data & Methodology Appendix</strong>
+                    <p className="text-sm mt-1">A separate ~60-page document that provides full transparency into our methodology and the data used in the audit.</p>
+                  </div>
                 </li>
-                <li>
-                  <strong className="text-brand-navy">Competitor Scorecard</strong>
-                  <p className="text-sm ml-4 mt-1">A direct comparison of your brand's performance against your key competitors.</p>
+                <li className="flex items-start">
+                  <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
+                  <div>
+                    <strong className="text-brand-navy">Competitor Scorecard</strong>
+                    <p className="text-sm mt-1">A direct comparison of your brand's performance against your key competitors.</p>
+                  </div>
                 </li>
-                <li>
-                  <strong className="text-brand-navy">Team Recommendations</strong>
-                  <p className="text-sm ml-4 mt-1">Specific, actionable recommendations for your marketing and product teams to implement.</p>
+                <li className="flex items-start">
+                  <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
+                  <div>
+                    <strong className="text-brand-navy">Team Recommendations</strong>
+                    <p className="text-sm mt-1">Specific, actionable recommendations for your marketing and product teams to implement.</p>
+                  </div>
                 </li>
-                <li>
-                  <strong className="text-brand-navy">Ongoing Tracking (Optional)</strong>
-                  <p className="text-sm ml-4 mt-1">Options for quarterly or monthly updates are available to continuously track your AI brand presence. Contact us for bespoke packages.</p>
+                <li className="flex items-start">
+                  <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
+                  <div>
+                    <strong className="text-brand-navy">Ongoing Tracking (Optional)</strong>
+                    <p className="text-sm mt-1">Options for quarterly or monthly updates are available to continuously track your AI brand presence. Contact us for bespoke packages.</p>
+                  </div>
                 </li>
               </ul>
             </div>
