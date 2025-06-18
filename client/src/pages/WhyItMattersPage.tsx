@@ -116,89 +116,12 @@ const WhyItMattersPage: React.FC = () => {
                 </div>
               </div>
 
-              <div className="w-full">
-                <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold mb-3 md:mb-4 text-brand-navy px-4">"Zero-Click" Searches Now Dominate</h2>
-                <p className="text-base md:text-lg text-gray-700 mb-4 md:mb-6 px-4">
-                  Users get answers directly from AI overviews, reducing the need to click through to websites.
-                </p>
-                <div className="mx-4 md:mx-0">
-                  <div className="bg-white p-4 md:p-6 rounded-lg shadow-lg">
-                    <h3 className="text-lg md:text-xl font-semibold text-center mb-4 text-brand-navy">
-                      Outcomes of Google Searches in EU/UK
-                    </h3>
-                    <ChartContainer
-                      config={{
-                        Desktop: {
-                          label: "Desktop",
-                          color: "#14213D",
-                        },
-                        Mobile: {
-                          label: "Mobile", 
-                          color: "#FCA311",
-                        },
-                      }}
-                      className="h-[300px] w-full"
-                    >
-                      <ResponsiveContainer width="100%" height="100%">
-                        <LineChart
-                          data={ctrData}
-                          margin={{
-                            top: 20,
-                            right: 30,
-                            left: 20,
-                            bottom: 40,
-                          }}
-                        >
-                          <CartesianGrid strokeDasharray="3 3" stroke="#e0e0e0" />
-                          <XAxis 
-                            dataKey="scenario" 
-                            axisLine={false}
-                            tickLine={false}
-                            tick={{ fontSize: 12, fill: '#666' }}
-                          />
-                          <YAxis 
-                            domain={[0, 20]}
-                            label={{ value: 'CTR (%)', angle: -90, position: 'insideLeft' }}
-                            axisLine={false}
-                            tickLine={false}
-                            tick={{ fontSize: 12, fill: '#666' }}
-                          />
-                          <ChartTooltip content={<ChartTooltipContent />} />
-                          <Line 
-                            type="monotone" 
-                            dataKey="Desktop" 
-                            stroke="#14213D" 
-                            strokeWidth={1}
-                            dot={{ fill: "#14213D", strokeWidth: 1, r: 3 }}
-                          />
-                          <Line 
-                            type="monotone" 
-                            dataKey="Mobile" 
-                            stroke="#FCA311" 
-                            strokeWidth={1}
-                            dot={{ fill: "#FCA311", strokeWidth: 1, r: 3 }}
-                          />
-                        </LineChart>
-                      </ResponsiveContainer>
-                    </ChartContainer>
-                    <div className="flex flex-col sm:flex-row justify-center mt-3 md:mt-4 space-y-2 sm:space-y-0 sm:space-x-4 md:space-x-6 text-xs md:text-sm">
-                      <div className="flex items-center justify-center">
-                        <div className="w-3 h-3 md:w-4 md:h-4 bg-[#14213D] mr-2 rounded"></div>
-                        <span>Desktop</span>
-                      </div>
-                      <div className="flex items-center justify-center">
-                        <div className="w-3 h-3 md:w-4 md:h-4 bg-[#FCA311] mr-2 rounded"></div>
-                        <span>Mobile</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+
 
               <div className="w-full">
                 <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold mb-3 md:mb-4 text-brand-navy px-4">Direct Impact on Traffic</h2>
                 <p className="text-base md:text-lg text-gray-700 mb-4 md:mb-6 px-4">
-                  The appearance of AI Overviews in search results leads to significant drops in click-through rates to traditional web pages.
+                  The appearance of AI Overviews in search results leads to significant drops in click-through rates to traditional web pages (source: Internal Mail Online Audit). Users get answers directly from AI overviews, reducing the need to click through to websites.
                 </p>
                 <div className="mx-4 md:mx-0">
                   <div className="bg-white p-4 md:p-6 rounded-lg shadow-lg">
