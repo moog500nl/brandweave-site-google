@@ -20,9 +20,13 @@ const BlogListPage: React.FC = () => {
   return (
     <div className="animate-fade-in">
       <PageSection>
-        <h1 className="text-4xl md:text-5xl font-bold text-center mb-12 text-brand-navy">
-          Brandweave AI Blog
-        </h1>
+        <div className="flex justify-center mb-12">
+          <img 
+            src="@assets/v1_logo_vertical_on white or grey (1)_1750245161941.png" 
+            alt="Brandweave AI" 
+            className="h-32 md:h-40 w-auto"
+          />
+        </div>
         <p className="text-xl text-center text-gray-700 max-w-2xl mx-auto mb-12">
           Insights, tips, and news on navigating the AI-first world of brand discovery.
         </p>
