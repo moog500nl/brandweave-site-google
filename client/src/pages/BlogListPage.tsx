@@ -25,7 +25,7 @@ const BlogListPage: React.FC = () => {
           <img 
             src={logoVertical} 
             alt="Brandweave AI" 
-            className="h-32 md:h-40 w-auto"
+            className="h-48 md:h-64 lg:h-72 w-auto"
           />
         </div>
         <p className="text-xl text-center text-gray-700 max-w-2xl mx-auto mb-12">
