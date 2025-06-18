@@ -107,6 +107,7 @@ This is a full-stack React application for Brandweave AI, a brand intelligence p
   - Updated favicon with high-quality PNG files in multiple resolutions (32x32, 64x64, 256x256)
   - Enhanced audit page with detailed four-stage process and comprehensive deliverables section
   - Repositioned CTR impact line graph to Direct Impact on Traffic section and removed Zero-Click searches section for cleaner flow
+  - Updated CallToAction component to use wouter routing and added smooth scroll-to-top functionality
 
 ## User Preferences
 
