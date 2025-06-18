@@ -4,6 +4,8 @@ import CallToAction from '@/components/CallToAction';
 import PlaceholderChart from '@/components/PlaceholderChart';
 import SEO from '@/components/SEO';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+import { ChartContainer, ChartTooltip, ChartTooltipContent } from '@/components/ui/chart';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, ResponsiveContainer, Cell } from 'recharts';
 import { CheckCircle } from 'lucide-react';
 import { organizationData, websiteData, serviceData } from '@/data/structuredData';
 
@@ -11,6 +13,35 @@ const HomePage: React.FC = () => {
   const structuredData = {
     "@context": "https://schema.org",
     "@graph": [organizationData, websiteData, serviceData]
+  };
+
+  const salesFunnelData = [
+    {
+      stage: 'Initial Research',
+      'Traditional Search': 10,
+      'LLM Answer Engines': 3
+    },
+    {
+      stage: 'Short List',
+      'Traditional Search': 5,
+      'LLM Answer Engines': 2
+    },
+    {
+      stage: 'Final Evaluation',
+      'Traditional Search': 3,
+      'LLM Answer Engines': 2
+    }
+  ];
+
+  const salesFunnelConfig = {
+    'Traditional Search': {
+      label: "Traditional Search",
+      color: "#14213d",
+    },
+    'LLM Answer Engines': {
+      label: "LLM Answer Engines",
+      color: "#fca311",
+    },
   };
 
   const howItWorksSteps = [
@@ -99,7 +130,37 @@ const HomePage: React.FC = () => {
             </p>
           </div>
           <div className="transform transition-all duration-1000 animate-[slideInFromRight_0.8s_ease-out_0.2s_forwards] opacity-0 translate-x-8">
-            <PlaceholderChart title="AI Compresses the Sales Funnel" className="max-w-3xl mx-auto hover:shadow-2xl transition-shadow duration-500" />
+            <div className="bg-white p-6 rounded-lg shadow-lg max-w-3xl mx-auto hover:shadow-2xl transition-shadow duration-500">
+              <h3 className="text-xl md:text-2xl font-semibold mb-6 text-brand-navy text-center">AI Compresses the Sales Funnel</h3>
+              <ChartContainer config={salesFunnelConfig} className="h-64 md:h-80 w-full">
+                <BarChart data={salesFunnelData} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
+                  <CartesianGrid strokeDasharray="3 3" />
+                  <XAxis 
+                    dataKey="stage" 
+                    tick={{ fontSize: 12, fontFamily: 'system-ui, sans-serif' }}
+                    className="text-sm"
+                  />
+                  <YAxis 
+                    tick={{ fontSize: 12, fontFamily: 'system-ui, sans-serif' }}
+                    label={{ value: 'Number of Brands Considered', angle: -90, position: 'insideLeft', style: { fontFamily: 'system-ui, sans-serif', fontSize: '12px' } }}
+                    className="text-sm"
+                  />
+                  <ChartTooltip />
+                  <Bar dataKey="Traditional Search" fill="#14213d" radius={[4, 4, 0, 0]} />
+                  <Bar dataKey="LLM Answer Engines" fill="#fca311" radius={[4, 4, 0, 0]} />
+                </BarChart>
+              </ChartContainer>
+              <div className="flex justify-center mt-4 space-x-6 text-sm">
+                <div className="flex items-center">
+                  <div className="w-4 h-4 bg-brand-navy mr-2 rounded"></div>
+                  <span>Traditional Search</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-4 h-4 bg-brand-orange mr-2 rounded"></div>
+                  <span>LLM Answer Engines</span>
+                </div>
+              </div>
+            </div>
           </div>
           <p className="text-center mt-8 text-gray-600 transform transition-all duration-1000 animate-[fadeInUp_0.8s_ease-out_0.4s_forwards] opacity-0 translate-y-4">
             Visual representation of how LLMs consider fewer brands than traditional search, impacting your reach.
