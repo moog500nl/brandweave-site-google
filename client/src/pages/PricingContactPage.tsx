@@ -17,10 +17,10 @@ const PricingContactPage: React.FC = () => {
       <PageSection>
         <div className="text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 text-brand-navy">
-            Simple and Affordable
+            Unique and Comprehensive
           </h1>
           <p className="text-xl text-gray-700 max-w-2xl mx-auto mb-12">
-            Get started with our comprehensive AI Brand Intelligence Audit.
+            Be the Brand AI Trusts and Recommends
           </p>
         </div>
 
@@ -35,35 +35,35 @@ const PricingContactPage: React.FC = () => {
             <div className="mb-6">
               <ul className="space-y-4 text-gray-700">
                 <li className="flex items-start">
-                  <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
+                  <CheckCircle className="h-5 w-5 text-[#FCA311] mr-3 mt-0.5 flex-shrink-0" />
                   <div>
                     <strong className="text-brand-navy">An Executive PDF Report</strong>
                     <p className="text-sm mt-1">A detailed ~30-page report containing the full analysis, findings, and strategic roadmap.</p>
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
+                  <CheckCircle className="h-5 w-5 text-[#FCA311] mr-3 mt-0.5 flex-shrink-0" />
                   <div>
                     <strong className="text-brand-navy">Data & Methodology Appendix</strong>
                     <p className="text-sm mt-1">A separate ~60-page document that provides full transparency into our methodology and the data used in the audit.</p>
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
+                  <CheckCircle className="h-5 w-5 text-[#FCA311] mr-3 mt-0.5 flex-shrink-0" />
                   <div>
                     <strong className="text-brand-navy">Competitor Scorecard</strong>
                     <p className="text-sm mt-1">A direct comparison of your brand's performance against your key competitors.</p>
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
+                  <CheckCircle className="h-5 w-5 text-[#FCA311] mr-3 mt-0.5 flex-shrink-0" />
                   <div>
                     <strong className="text-brand-navy">Team Recommendations</strong>
                     <p className="text-sm mt-1">Specific, actionable recommendations for your marketing and product teams to implement.</p>
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
+                  <CheckCircle className="h-5 w-5 text-[#FCA311] mr-3 mt-0.5 flex-shrink-0" />
                   <div>
                     <strong className="text-brand-navy">Ongoing Tracking (Optional)</strong>
                     <p className="text-sm mt-1">Options for quarterly or monthly updates are available to continuously track your AI brand presence. Contact us for bespoke packages.</p>
