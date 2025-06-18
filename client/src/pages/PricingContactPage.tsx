@@ -82,7 +82,9 @@ const PricingContactPage: React.FC = () => {
               width="100%" 
               height="774" 
               frameBorder="0" 
+              scrolling="no"
               title="Contact form"
+              style={{ overflow: 'hidden' }}
             ></iframe>
           </div>
         </div>
