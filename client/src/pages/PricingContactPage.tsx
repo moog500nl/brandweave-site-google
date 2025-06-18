@@ -52,12 +52,10 @@ const PricingContactPage: React.FC = () => {
                 </li>
                 <li>
                   <strong className="text-brand-navy">Ongoing Tracking (Optional)</strong>
+                  <p className="text-sm ml-4 mt-1">Options for quarterly or monthly updates are available to continuously track your AI brand presence. Contact us for bespoke packages.</p>
                 </li>
               </ul>
             </div>
-            <p className="text-gray-700">
-              Options for quarterly or monthly updates are available to continuously track your AI brand presence. Contact us for bespoke packages.
-            </p>
 
           </div>
 
