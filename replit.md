@@ -101,6 +101,7 @@ This is a full-stack React application for Brandweave AI, a brand intelligence p
   - Added Google Search Console verification file
   - Replaced placeholder chart with double bar graph showing sales funnel compression
   - Updated homepage button positioning and text
+  - Moved FAQ section from homepage to bottom of Audit page
 
 ## User Preferences
 

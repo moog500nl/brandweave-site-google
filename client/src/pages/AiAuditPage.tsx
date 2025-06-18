@@ -1,6 +1,7 @@
 import React from 'react';
 import PageSection from '@/components/PageSection';
 import CallToAction from '@/components/CallToAction';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { CheckCircle, FileText, BarChart2, ListChecks, Brain } from 'lucide-react';
 import usePageMetadata from '@/hooks/usePageMetadata';
 
@@ -21,6 +22,21 @@ const AiAuditPage: React.FC = () => {
     "Executive PDF report (≈30 pages) with a full data appendix.",
     "Scorecard comparing your brand against key competitors on critical AI metrics.",
     "Actionable recommendations tailored for your marketing and product teams to enhance AI visibility and sentiment.",
+  ];
+
+  const faqs = [
+    {
+      question: "What exactly is an AI Brand Intelligence Audit?",
+      answer: "Our AI Brand Intelligence Audit is a comprehensive analysis that tests how major AI models like ChatGPT, Claude, and Gemini perceive, describe, and recommend your brand. We provide quantifiable scores for visibility, sentiment, and trust, along with actionable recommendations to improve your AI brand presence."
+    },
+    {
+      question: "How long does the audit process take?",
+      answer: "The audit process typically takes 5-7 business days from initiation. This includes comprehensive testing across multiple AI models, analysis of results, competitive benchmarking, and preparation of your detailed report with actionable recommendations."
+    },
+    {
+      question: "Why is AI brand perception important for my business?",
+      answer: "AI is fundamentally changing how customers discover and research brands. As more people rely on AI assistants for recommendations and information, your brand's visibility and perception in these systems directly impacts your future customer acquisition and market position. Being invisible to AI means being invisible to tomorrow's customers."
+    }
   ];
 
   return (
@@ -58,6 +74,32 @@ const AiAuditPage: React.FC = () => {
           </ul>
           <div className="text-center mt-12">
             <CallToAction to="/pricing-contact" text="View Pricing and Get Started" variant="primary" />
+          </div>
+        </div>
+
+        {/* FAQ Section */}
+        <div className="bg-brand-lightGray p-8 md:p-12 rounded-lg shadow-lg mt-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-brand-navy">Frequently Asked Questions</h2>
+          <div className="max-w-4xl mx-auto">
+            <Accordion type="single" collapsible className="w-full space-y-4">
+              {faqs.map((faq, index) => (
+                <AccordionItem 
+                  key={index} 
+                  value={`item-${index}`} 
+                  className="bg-white rounded-lg shadow-md border-0 overflow-hidden"
+                >
+                  <AccordionTrigger className="px-6 py-4 text-left text-lg font-semibold text-brand-navy hover:bg-gray-50 hover:no-underline">
+                    {faq.question}
+                  </AccordionTrigger>
+                  <AccordionContent className="px-6 pb-4 text-gray-700 leading-relaxed">
+                    {faq.answer}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
+            <div className="text-center mt-12">
+              <CallToAction to="/pricing-contact" text="Have More Questions? Contact Us" variant="secondary" />
+            </div>
           </div>
         </div>
       </PageSection>
