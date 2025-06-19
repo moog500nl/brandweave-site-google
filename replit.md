@@ -118,6 +118,7 @@ This is a full-stack React application for Brandweave AI, a brand intelligence p
   - Updated pricing section heading from "Pricing" to "Introductory Pricing"
   - Redesigned About Us page with updated content structure, question mark icon, and streamlined messaging focusing on AI platform auditing
   - Added Discovery Session as first step in audit process with Search icon and renumbered subsequent steps accordingly
+  - Improved audit process box layout with icons on separate rows above titles for better visual hierarchy and consistent icon sizing
 
 ## User Preferences
 

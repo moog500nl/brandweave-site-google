@@ -102,8 +102,8 @@ const AiAuditPage: React.FC = () => {
           <div className="grid md:grid-cols-2 gap-8 mb-8">
             {processSteps.slice(0, 4).map((step, index) => (
               <div key={index} className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col items-start text-left">
-                <div className="flex items-center mb-4">
-                  <step.icon size={step.iconSize} className="text-brand-orange mr-3" />
+                <div className="mb-4">
+                  <step.icon size={step.iconSize} className="text-brand-orange mb-3" />
                   <h3 className="text-xl font-semibold text-brand-navy">{step.title}</h3>
                 </div>
                 <p className="text-gray-600 leading-relaxed">{step.description}</p>
@@ -115,8 +115,8 @@ const AiAuditPage: React.FC = () => {
           <div className="flex justify-center">
             {processSteps.slice(4, 5).map((step, index) => (
               <div key={index + 4} className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col items-start text-left max-w-md">
-                <div className="flex items-center mb-4">
-                  <step.icon size={step.iconSize} className="text-brand-orange mr-3" />
+                <div className="mb-4">
+                  <step.icon size={step.iconSize} className="text-brand-orange mb-3" />
                   <h3 className="text-xl font-semibold text-brand-navy">{step.title}</h3>
                 </div>
                 <p className="text-gray-600 leading-relaxed">{step.description}</p>
