@@ -2,7 +2,7 @@
 import React from 'react';
 import PageSection from '@/components/PageSection';
 import CallToAction from '@/components/CallToAction';
-import { Users, HelpCircle } from 'lucide-react';
+import { Users, HelpCircle, Lightbulb } from 'lucide-react';
 import usePageMetadata from '@/hooks/usePageMetadata';
 
 const AboutUsPage: React.FC = () => {
@@ -17,7 +17,7 @@ const AboutUsPage: React.FC = () => {
       text: "As search shifts from keywords to questions, from results to answers, most brands are still optimising for a world that's disappearing."
     },
     {
-      icon: Users,
+      icon: Lightbulb,
       text: "We help you audit how your brand shows up across AI platforms like ChatGPT, Gemini, Perplexity, Claude and Grok, combining deep research, expert insight, and a tailored roadmap."
     }
   ];
