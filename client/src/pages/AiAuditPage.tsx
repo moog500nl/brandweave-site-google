@@ -13,27 +13,32 @@ const AiAuditPage: React.FC = () => {
 
   const processSteps = [
     { 
-      icon: Search, 
+      icon: Search,
+      iconSize: 28,
       title: "1. Discovery Session", 
       description: "We start with this to ensure that the audit is tightly scoped, fully data-enabled and aligned to your high-priority business and brand objectives. The discovery session includes our team understanding your brand story & positioning, audience & journeys, relevant KPIs and competitive landscape."
     },
     { 
-      icon: Brain, 
+      icon: Brain,
+      iconSize: 26,
       title: "2. Interrogate Leading LLMs", 
       description: "Based on your business objectives, we use our proprietary platform to analyse the outputs and 'thought patterns' of top AI models. This systematic process reveals the exact criteria and sources the models are using to form their recommendations about your brand and your competitors. We test for consistency across different phrasing styles, the influence of prompt context on brand mentions, and the stability of brand rankings over time."
     },
     { 
-      icon: BarChart2, 
+      icon: BarChart2,
+      iconSize: 28,
       title: "3. Benchmark Against Your Rivals", 
       description: "We generate a competitive tier table that shows which of your rivals is the default recommendation in your category and, crucially, explains why. This allows you to clearly see your ranking against both incumbent and challenger brands and understand the specific data gaps or content issues affecting your position."
     },
     { 
-      icon: ListChecks, 
+      icon: ListChecks,
+      iconSize: 28,
       title: "4. Deliver Your Visibility, Sentiment & Trust Scorecard", 
       description: "You receive a trackable scorecard that measures your brand's performance across three critical AI metrics: Visibility, Sentiment, and Trust. This scorecard quantifies your position, shows the gap between you and the category leader, and provides a trend line so you can easily measure progress over time as you implement changes."
     },
     { 
-      icon: FileText, 
+      icon: FileText,
+      iconSize: 28,
       title: "5. Provide Actionable Recommendations", 
       description: "We translate the AI insights into concrete actions your teams can use to shape future outcomes. The audit report provides a high-level roadmap with clear recommendations designed to improve your score. Wherever possible, we link these actions directly to measurable ROI."
     },
@@ -98,7 +103,7 @@ const AiAuditPage: React.FC = () => {
             {processSteps.slice(0, 4).map((step, index) => (
               <div key={index} className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col items-start text-left">
                 <div className="flex items-center mb-4">
-                  <step.icon size={24} className="text-brand-orange mr-3" />
+                  <step.icon size={step.iconSize} className="text-brand-orange mr-3" />
                   <h3 className="text-xl font-semibold text-brand-navy">{step.title}</h3>
                 </div>
                 <p className="text-gray-600 leading-relaxed">{step.description}</p>
@@ -111,7 +116,7 @@ const AiAuditPage: React.FC = () => {
             {processSteps.slice(4, 5).map((step, index) => (
               <div key={index + 4} className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col items-start text-left max-w-md">
                 <div className="flex items-center mb-4">
-                  <step.icon size={24} className="text-brand-orange mr-3" />
+                  <step.icon size={step.iconSize} className="text-brand-orange mr-3" />
                   <h3 className="text-xl font-semibold text-brand-navy">{step.title}</h3>
                 </div>
                 <p className="text-gray-600 leading-relaxed">{step.description}</p>
