@@ -2,7 +2,7 @@
 import React from 'react';
 import PageSection from '@/components/PageSection';
 import CallToAction from '@/components/CallToAction';
-import { Users, Lightbulb } from 'lucide-react';
+import { Users, HelpCircle } from 'lucide-react';
 import usePageMetadata from '@/hooks/usePageMetadata';
 
 const AboutUsPage: React.FC = () => {
@@ -11,11 +11,15 @@ const AboutUsPage: React.FC = () => {
     "Meet the Brandweave AI team. We help businesses navigate AI-driven brand discovery with expert-led audits and strategic insights for long-term AI brand health."
   );
 
-  const differentiators = [
-    "Foundation-level insight into how AI models perceive and rank brands.",
-    "Move from 'Model Guesswork' to 'Model Transparency' with evidence-based analysis.",
-    "Strategic recommendations focused on long-term AI brand health.",
-    "Expert-led audits ensuring deep understanding and actionable outcomes."
+  const topBoxes = [
+    {
+      icon: HelpCircle,
+      text: "As search shifts from keywords to questions, from results to answers, most brands are still optimising for a world that's disappearing."
+    },
+    {
+      icon: Users,
+      text: "We help you audit how your brand shows up across AI platforms like ChatGPT, Gemini, Perplexity, Claude and Grok, combining deep research, expert insight, and a tailored roadmap."
+    }
   ];
 
   return (
@@ -63,15 +67,25 @@ const AboutUsPage: React.FC = () => {
 
           <div className="bg-brand-navy p-8 md:p-12 rounded-lg shadow-xl">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 !text-brand-white">Our Unique Approach</h2>
-            <div className="grid md:grid-cols-2 gap-6">
-              {differentiators.map((item, index) => (
+            
+            {/* Top two boxes */}
+            <div className="grid md:grid-cols-2 gap-6 mb-6">
+              {topBoxes.map((box, index) => (
                 <div key={index} className="flex items-start p-4 bg-blue-800 rounded">
-                  <Lightbulb className="h-6 w-6 text-brand-orange mr-3 mt-1 flex-shrink-0" />
-                  <p className="text-lg text-gray-200">{item}</p>
+                  <box.icon className="h-6 w-6 text-brand-orange mr-3 mt-1 flex-shrink-0" />
+                  <p className="text-lg text-gray-200">{box.text}</p>
                 </div>
               ))}
             </div>
-            <div className="text-center mt-12">
+            
+            {/* Bottom full-width box */}
+            <div className="flex items-center justify-center p-4 bg-blue-800 rounded mb-8">
+              <p className="text-lg text-gray-200 font-bold text-center">
+                No dashboards. No keyword fluff. Just strategy, recommendations, and priorities.
+              </p>
+            </div>
+            
+            <div className="text-center">
               <CallToAction to="/pricing-contact" text="Get Audit" variant="primary" />
             </div>
           </div>

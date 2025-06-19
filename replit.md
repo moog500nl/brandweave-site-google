@@ -116,6 +116,7 @@ This is a full-stack React application for Brandweave AI, a brand intelligence p
   - Added Anthropic and Grok text logos to homepage logo row with proportional sizing and increased spacing
   - Hidden blog section from navigation menu for streamlined user experience  
   - Updated pricing section heading from "Pricing" to "Introductory Pricing"
+  - Redesigned About Us page with updated content structure, question mark icon, and streamlined messaging focusing on AI platform auditing
 
 ## User Preferences
 
