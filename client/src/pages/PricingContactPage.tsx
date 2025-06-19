@@ -26,7 +26,7 @@ const PricingContactPage: React.FC = () => {
         <div className="grid md:grid-cols-2 gap-12 items-start">
           {/* Pricing Section */}
           <div className="bg-brand-lightGray p-8 md:p-12 rounded-lg shadow-xl">
-            <h2 className="text-3xl font-semibold text-brand-navy mb-6 text-center">Pricing</h2>
+            <h2 className="text-3xl font-semibold text-brand-navy mb-6 text-center">Introductory Pricing</h2>
             <div className="text-center mb-6">
               <span className="text-5xl font-bold text-brand-orange">£5,000</span>
               <span className="text-lg text-gray-600"> / per Audit Report</span>

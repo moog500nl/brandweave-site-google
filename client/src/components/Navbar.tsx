@@ -9,7 +9,6 @@ const NavLinks = [
   { name: 'Audit', path: '/ai-audit' },
   { name: 'About', path: '/about-us' },
   { name: 'Pricing', path: '/pricing-contact' },
-  { name: 'Blog', path: '/blog' },
 ];
 
 const Navbar: React.FC = () => {

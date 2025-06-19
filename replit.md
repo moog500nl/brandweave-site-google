@@ -114,6 +114,8 @@ This is a full-stack React application for Brandweave AI, a brand intelligence p
   - Updated homepage "How It Works" sequence to: Analyse, Score, Benchmark, Recommend
   - Replaced "Explore the Audit" button with "Get Audit" button linking to pricing-contact page
   - Added Anthropic and Grok text logos to homepage logo row with proportional sizing and increased spacing
+  - Hidden blog section from navigation menu for streamlined user experience  
+  - Updated pricing section heading from "Pricing" to "Introductory Pricing"
 
 ## User Preferences
 
