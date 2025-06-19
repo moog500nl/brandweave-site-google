@@ -2,7 +2,7 @@ import React from 'react';
 import PageSection from '@/components/PageSection';
 import CallToAction from '@/components/CallToAction';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import { CheckCircle, FileText, BarChart2, ListChecks, Brain } from 'lucide-react';
+import { CheckCircle, FileText, BarChart2, ListChecks, Brain, Search } from 'lucide-react';
 import usePageMetadata from '@/hooks/usePageMetadata';
 
 const AiAuditPage: React.FC = () => {
@@ -13,23 +13,28 @@ const AiAuditPage: React.FC = () => {
 
   const processSteps = [
     { 
+      icon: Search, 
+      title: "1. Discovery Session", 
+      description: "We start with this to ensure that the audit is tightly scoped, fully data-enabled and aligned to your high-priority business and brand objectives. The discovery session includes our team understanding your brand story & positioning, audience & journeys, relevant KPIs and competitive landscape."
+    },
+    { 
       icon: Brain, 
-      title: "1. Interrogate Leading LLMs", 
+      title: "2. Interrogate Leading LLMs", 
       description: "Based on your business objectives, we use our proprietary platform to analyse the outputs and 'thought patterns' of top AI models. This systematic process reveals the exact criteria and sources the models are using to form their recommendations about your brand and your competitors. We test for consistency across different phrasing styles, the influence of prompt context on brand mentions, and the stability of brand rankings over time."
     },
     { 
       icon: BarChart2, 
-      title: "2. Benchmark Against Your Rivals", 
+      title: "3. Benchmark Against Your Rivals", 
       description: "We generate a competitive tier table that shows which of your rivals is the default recommendation in your category and, crucially, explains why. This allows you to clearly see your ranking against both incumbent and challenger brands and understand the specific data gaps or content issues affecting your position."
     },
     { 
       icon: ListChecks, 
-      title: "3. Deliver Your Visibility, Sentiment & Trust Scorecard", 
+      title: "4. Deliver Your Visibility, Sentiment & Trust Scorecard", 
       description: "You receive a trackable scorecard that measures your brand's performance across three critical AI metrics: Visibility, Sentiment, and Trust. This scorecard quantifies your position, shows the gap between you and the category leader, and provides a trend line so you can easily measure progress over time as you implement changes."
     },
     { 
       icon: FileText, 
-      title: "4. Provide Actionable Recommendations", 
+      title: "5. Provide Actionable Recommendations", 
       description: "We translate the AI insights into concrete actions your teams can use to shape future outcomes. The audit report provides a high-level roadmap with clear recommendations designed to improve your score. Wherever possible, we link these actions directly to measurable ROI."
     },
   ];
