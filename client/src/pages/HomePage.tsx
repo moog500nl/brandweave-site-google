@@ -200,7 +200,7 @@ const HomePage: React.FC = () => {
             ))}
           </div>
           <div className="text-center mt-12 transform transition-all duration-1000 animate-[fadeInUp_0.8s_ease-out_0.6s_forwards] opacity-0 translate-y-8">
-            <CallToAction to="/pricing-contact" text="Get Audit" variant="secondary" />
+            <CallToAction to="/pricing-contact" text="Get Audit" variant="primary" />
           </div>
         </PageSection>
 
