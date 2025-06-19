@@ -69,16 +69,16 @@ const AiAuditPage: React.FC = () => {
 
   const faqs = [
     {
-      question: "What exactly is an AI Brand Intelligence Audit?",
-      answer: "Our AI Brand Intelligence Audit is a comprehensive analysis that tests how major AI models like ChatGPT, Claude, and Gemini perceive, describe, and recommend your brand. We provide quantifiable scores for visibility, sentiment, and trust, along with actionable recommendations to improve your AI brand presence."
+      question: "Which AI models do you evaluate?",
+      answer: "We have the capabilities to evaluate OpenAI ChatGPT, Google Gemini, Perplexity, Anthropic Claude and X Grok."
     },
     {
       question: "How long does the audit process take?",
-      answer: "The audit process typically takes 5-7 business days from initiation. This includes comprehensive testing across multiple AI models, analysis of results, competitive benchmarking, and preparation of your detailed report with actionable recommendations."
+      answer: "The audit process typically takes 5-7 business days from initiation. This includes the discovery session, comprehensive interrogation of multiple AI models, analysis of results, competitive benchmarking, and preparation of your detailed report with actionable recommendations."
     },
     {
-      question: "Why is AI brand perception important for my business?",
-      answer: "AI is fundamentally changing how customers discover and research brands. As more people rely on AI assistants for recommendations and information, your brand's visibility and perception in these systems directly impacts your future customer acquisition and market position. Being invisible to AI means being invisible to tomorrow's customers."
+      question: "How do you ensure objectivity and repeatability?",
+      answer: "We use fixed-prompt methodologies, consistent sampling across multiple sessions, and a structured scoring rubric to guarantee reproducible results."
     }
   ];
 

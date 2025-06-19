@@ -1,6 +1,6 @@
 How the Audit is Carried Out: Our Four-Stage Process
 
-Every audit is a bespoke project led by one of our founders, where we take the time to understand your specific brand, strategies, and challenges. Our analysis follows a transparent, four-stage methodology:
+Every audit is a bespoke project led by one of our founders, where we take the time to understand your specific brand, strategies, and challenges. Our analysis follows a transparent, five-stage methodology:
 
 1. Interrogate Leading LLMs
 Based on your business objectives, we use our proprietary platform to analyse the outputs and "thought patterns" of top AI models. This systematic process reveals the exact criteria and sources the models are using to form their recommendations about your brand and your competitors. We test for consistency across different phrasing styles, the influence of prompt context on brand mentions, and the stability of brand rankings over time.
