@@ -113,7 +113,7 @@ This is a full-stack React application for Brandweave AI, a brand intelligence p
   - Replaced contact form with Tally form embed for better lead capture functionality
   - Updated homepage "How It Works" sequence to: Analyse, Score, Benchmark, Recommend
   - Replaced "Explore the Audit" button with "Get Audit" button linking to pricing-contact page
-  - Added Anthropic and Grok AI logos to homepage logo row with proportional sizing
+  - Added Anthropic logo to homepage logo row with proportional sizing
 
 ## User Preferences
 
