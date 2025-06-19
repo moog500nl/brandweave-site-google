@@ -96,6 +96,11 @@ const HomePage: React.FC = () => {
                 alt="Anthropic Logo" 
                 className="h-4 md:h-6 lg:h-8 opacity-90 hover:opacity-100 transition-all duration-300 hover:scale-110"
               />
+              <img 
+                src="/grok-ai.jpg" 
+                alt="Grok AI Logo" 
+                className="h-4 md:h-6 lg:h-8 opacity-90 hover:opacity-100 transition-all duration-300 hover:scale-110"
+              />
             </div>
             
             <div className="space-x-0 space-y-4 md:space-y-0 md:space-x-4 transform transition-all duration-1000 animate-[fadeInUp_0.8s_ease-out_0.6s_forwards] opacity-0 translate-y-8">
