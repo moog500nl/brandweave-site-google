@@ -117,7 +117,7 @@ const AiAuditPage: React.FC = () => {
             ))}
           </div>
           <div className="text-center mt-12">
-            <CallToAction to="/pricing-contact" text="View Pricing and Get Started" variant="primary" />
+            <CallToAction to="/pricing-contact" text="Get Audit" variant="primary" />
           </div>
         </div>
 

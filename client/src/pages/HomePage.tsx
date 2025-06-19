@@ -91,6 +91,16 @@ const HomePage: React.FC = () => {
                 alt="Logo" 
                 className="h-8 md:h-10 lg:h-12 opacity-90 hover:opacity-100 transition-all duration-300 hover:scale-110"
               />
+              <img 
+                src="/attached_assets/anthropic_1750335911166.png" 
+                alt="Anthropic Logo" 
+                className="h-8 md:h-10 lg:h-12 opacity-90 hover:opacity-100 transition-all duration-300 hover:scale-110"
+              />
+              <img 
+                src="/attached_assets/grok_1750335916760.png" 
+                alt="Grok Logo" 
+                className="h-8 md:h-10 lg:h-12 opacity-90 hover:opacity-100 transition-all duration-300 hover:scale-110"
+              />
             </div>
             
             <div className="space-x-0 space-y-4 md:space-y-0 md:space-x-4 transform transition-all duration-1000 animate-[fadeInUp_0.8s_ease-out_0.6s_forwards] opacity-0 translate-y-8">

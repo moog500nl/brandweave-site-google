@@ -72,7 +72,7 @@ const AboutUsPage: React.FC = () => {
               ))}
             </div>
             <div className="text-center mt-12">
-              <CallToAction to="/pricing-contact" text="Contact Our Experts" variant="primary" />
+              <CallToAction to="/pricing-contact" text="Get Audit" variant="primary" />
             </div>
           </div>
         </div>
