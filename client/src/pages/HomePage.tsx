@@ -123,7 +123,7 @@ const HomePage: React.FC = () => {
               Brand Discovery Has Fundamentally Changed
             </h2>
             <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-              AI is reshaping how customers find and perceive brands. Don't get left behind.
+              AI is collapsing the sales funnel, if you don't have an explicit AI search strategy you are already falling behind.
             </p>
           </div>
           <div className="transform transition-all duration-1000 animate-[slideInFromRight_0.8s_ease-out_0.2s_forwards] opacity-0 translate-x-8">
@@ -160,7 +160,7 @@ const HomePage: React.FC = () => {
             </div>
           </div>
           <p className="text-center mt-6 mb-6 text-gray-600 transform transition-all duration-1000 animate-[fadeInUp_0.8s_ease-out_0.4s_forwards] opacity-0 translate-y-4">
-            Visual representation of how Large Language Models (LLMs) end up mentioning fewer brands than traditional search results, potentially impacting your reach. Source: SurferSEO
+            Large Language Models (LLMs) pre-select a smaller set of brands based on the buyers requirements.  You will be either in or out.
           </p>
           <div className="text-center mb-4 transform transition-all duration-1000 animate-[fadeInUp_0.8s_ease-out_0.6s_forwards] opacity-0 translate-y-4">
             <CallToAction to="/why-it-matters" text="Explore the Risk" variant="secondary" />
