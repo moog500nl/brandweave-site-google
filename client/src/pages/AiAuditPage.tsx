@@ -92,16 +92,32 @@ const AiAuditPage: React.FC = () => {
         <p className="text-lg text-center text-gray-700 max-w-4xl mx-auto mb-12">
           Our analysis follows a transparent, four-stage methodology that provides deep insights into how AI models perceive and recommend your brand.
         </p>
-        <div className="grid md:grid-cols-2 gap-8 mb-16">
-          {processSteps.map((step, index) => (
-            <div key={index} className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col items-start text-left">
-              <div className="flex items-center mb-4">
-                <step.icon size={32} className="text-brand-orange mr-3" />
-                <h3 className="text-xl font-semibold text-brand-navy">{step.title}</h3>
+        <div className="mb-16">
+          {/* First 4 boxes in 2x2 grid */}
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
+            {processSteps.slice(0, 4).map((step, index) => (
+              <div key={index} className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col items-start text-left">
+                <div className="flex items-center mb-4">
+                  <step.icon size={24} className="text-brand-orange mr-3" />
+                  <h3 className="text-xl font-semibold text-brand-navy">{step.title}</h3>
+                </div>
+                <p className="text-gray-600 leading-relaxed">{step.description}</p>
               </div>
-              <p className="text-gray-600 leading-relaxed">{step.description}</p>
-            </div>
-          ))}
+            ))}
+          </div>
+          
+          {/* 5th box centered at bottom */}
+          <div className="flex justify-center">
+            {processSteps.slice(4, 5).map((step, index) => (
+              <div key={index + 4} className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col items-start text-left max-w-md">
+                <div className="flex items-center mb-4">
+                  <step.icon size={24} className="text-brand-orange mr-3" />
+                  <h3 className="text-xl font-semibold text-brand-navy">{step.title}</h3>
+                </div>
+                <p className="text-gray-600 leading-relaxed">{step.description}</p>
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* What You Receive */}
