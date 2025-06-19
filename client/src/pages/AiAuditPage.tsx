@@ -93,7 +93,7 @@ const AiAuditPage: React.FC = () => {
         </p>
 
         {/* Our Process */}
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-brand-navy">How the Audit is Carried Out: Our Four-Stage Process</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-brand-navy">How the Audit is Carried Out: Our Five-Stage Process</h2>
         <p className="text-lg text-center text-gray-700 max-w-4xl mx-auto mb-12">
           Our analysis follows a transparent, five-stage methodology that provides deep insights into how AI models perceive and recommend your brand.
         </p>
