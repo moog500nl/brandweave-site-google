@@ -92,12 +92,12 @@ const HomePage: React.FC = () => {
                 className="h-8 md:h-10 lg:h-12 opacity-90 hover:opacity-100 transition-all duration-300 hover:scale-110"
               />
               <img 
-                src="/attached_assets/anthropic_1750335911166.png" 
+                src="/anthropic.png" 
                 alt="Anthropic Logo" 
                 className="h-8 md:h-10 lg:h-12 opacity-90 hover:opacity-100 transition-all duration-300 hover:scale-110"
               />
               <img 
-                src="/attached_assets/grok_1750335916760.png" 
+                src="/grok.png" 
                 alt="Grok Logo" 
                 className="h-8 md:h-10 lg:h-12 opacity-90 hover:opacity-100 transition-all duration-300 hover:scale-110"
               />
