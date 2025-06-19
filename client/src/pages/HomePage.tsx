@@ -94,12 +94,7 @@ const HomePage: React.FC = () => {
               <img 
                 src="/anthropic.png" 
                 alt="Anthropic Logo" 
-                className="h-8 md:h-10 lg:h-12 opacity-90 hover:opacity-100 transition-all duration-300 hover:scale-110"
-              />
-              <img 
-                src="/grok.png" 
-                alt="Grok Logo" 
-                className="h-8 md:h-10 lg:h-12 opacity-90 hover:opacity-100 transition-all duration-300 hover:scale-110"
+                className="h-6 md:h-8 lg:h-10 opacity-90 hover:opacity-100 transition-all duration-300 hover:scale-110"
               />
             </div>
             
