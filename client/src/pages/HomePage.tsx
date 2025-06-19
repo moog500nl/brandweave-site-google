@@ -75,7 +75,7 @@ const HomePage: React.FC = () => {
             </p>
             
             {/* Logo Row */}
-            <div className="mb-8 flex justify-center items-center space-x-8 transform transition-all duration-1000 animate-[fadeInUp_0.8s_ease-out_0.4s_forwards] opacity-0 translate-y-8">
+            <div className="mb-12 mt-12 flex justify-center items-center space-x-8 transform transition-all duration-1000 animate-[fadeInUp_0.8s_ease-out_0.4s_forwards] opacity-0 translate-y-8">
               <img 
                 src="/lovable-uploads/478d9acb-1b95-45d6-9355-043f8a18aef7.png" 
                 alt="Google Logo" 
@@ -94,6 +94,11 @@ const HomePage: React.FC = () => {
               <img 
                 src="/anthropic.png" 
                 alt="Anthropic Logo" 
+                className="h-4 md:h-6 lg:h-8 opacity-90 hover:opacity-100 transition-all duration-300 hover:scale-110"
+              />
+              <img 
+                src="/grok-text.png" 
+                alt="Grok Logo" 
                 className="h-4 md:h-6 lg:h-8 opacity-90 hover:opacity-100 transition-all duration-300 hover:scale-110"
               />
             </div>
