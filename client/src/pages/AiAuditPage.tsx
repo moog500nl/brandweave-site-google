@@ -70,7 +70,7 @@ const AiAuditPage: React.FC = () => {
   const faqs = [
     {
       question: "How are you different from other solutions?",
-      answer: "While many start-ups provide SaaS dashboards to track AI-driven brand mentions, their methodologies vary significantly. This inconsistency is akin to using multiple, differently calibrated speedometers to gauge your speed in the world of AI search.\n\nBrandweave offers a more forensic approach. Like a race engineer, we deconstruct the entire system, fine-tune each element, and demonstrate the tangible performance gains you can expect. For businesses that require strategic insight, not simply data, Brandweave's audit delivers a more thorough and ultimately more valuable service."
+      answer: "There are quite a few start-ups that offer SaaS dashboards that monitor how often and where your brand is mentioned by AI. Brandweave is different because we don't just monitor, we carefully interrogate. We understand the criteria and sources that AI models use to form their recommendations about your brand and we use these insights to provide solutions to you."
     },
     {
       question: "Which AI models do you evaluate?",
