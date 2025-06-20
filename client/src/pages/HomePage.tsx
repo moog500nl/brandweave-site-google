@@ -212,9 +212,11 @@ const HomePage: React.FC = () => {
               </div>
             ))}
           </div>
-          <div className="text-center mt-12 transform transition-all duration-1000 animate-[fadeInUp_0.8s_ease-out_0.6s_forwards] opacity-0 translate-y-8 space-y-4">
-            <CallToAction to="/ai-audit" text="Explore Audit" variant="secondary" />
-            <CallToAction to="/pricing-contact" text="Get Audit" variant="primary" />
+          <div className="text-center mt-12 transform transition-all duration-1000 animate-[fadeInUp_0.8s_ease-out_0.6s_forwards] opacity-0 translate-y-8">
+            <div className="flex flex-col items-center space-y-4">
+              <CallToAction to="/ai-audit" text="Explore Audit" variant="secondary" />
+              <CallToAction to="/pricing-contact" text="Get Audit" variant="primary" />
+            </div>
           </div>
         </PageSection>
 
