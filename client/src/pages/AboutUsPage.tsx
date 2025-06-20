@@ -55,7 +55,7 @@ const AboutUsPage: React.FC = () => {
                   <img 
                     src="/linkedin-logo.png" 
                     alt="LinkedIn" 
-                    className="w-6 h-6 ml-3 cursor-pointer hover:opacity-80 transition-opacity"
+                    className="w-7 h-6 ml-3 cursor-pointer hover:opacity-80 transition-opacity"
                   />
                 </div>
                 <p className="text-gray-600 leading-relaxed">With over two decades of leadership experience forged at pioneering companies like Google and Microsoft, Marenco has a proven track record in analytics and product development. At Microsoft Advertising, he built the company's first analytics function outside of the US, and while at YouTube, his machine learning analytics work was recognised with the prestigious annual Platinum Award. He lives in Amsterdam with his wife, daughter, and two whippets.</p>
@@ -71,7 +71,7 @@ const AboutUsPage: React.FC = () => {
                   <img 
                     src="/linkedin-logo.png" 
                     alt="LinkedIn" 
-                    className="w-6 h-6 ml-3 cursor-pointer hover:opacity-80 transition-opacity"
+                    className="w-7 h-6 ml-3 cursor-pointer hover:opacity-80 transition-opacity"
                   />
                 </div>
                 <p className="text-gray-600 leading-relaxed">A seasoned expert in digital marketing and advertising, Andy has a proven track record of leadership at top-tier organisations like Razorfish (Publicis) and Microsoft Advertising. His ability to merge technical knowledge with commercial strategy culminated in him leading the global WPP relationship for Microsoft. Grounded by his training as a technologist, Andy brings a uniquely analytical and strategic approach to his work. He is a keen cyclist and resides just outside London.</p>
