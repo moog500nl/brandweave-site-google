@@ -45,20 +45,34 @@ const AboutUsPage: React.FC = () => {
             <h3 className="text-2xl font-semibold text-brand-navy text-center mb-8">Meet the Founders</h3>
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-white p-6 rounded-lg shadow flex flex-col items-center text-center">
-                <img 
-                  src="/lovable-uploads/297a916a-73bb-4525-bee8-cf3f47ee0f0d.png" 
-                  alt="Marenco Kemp" 
-                  className="w-32 h-48 md:w-40 md:h-60 object-cover rounded-lg shadow-lg mb-4"
-                />
+                <div className="relative flex items-center mb-4">
+                  <img 
+                    src="/lovable-uploads/297a916a-73bb-4525-bee8-cf3f47ee0f0d.png" 
+                    alt="Marenco Kemp" 
+                    className="w-32 h-48 md:w-40 md:h-60 object-cover rounded-lg shadow-lg"
+                  />
+                  <img 
+                    src="/linkedin-logo.png" 
+                    alt="LinkedIn" 
+                    className="w-8 h-8 ml-4 cursor-pointer hover:opacity-80 transition-opacity"
+                  />
+                </div>
                 <h4 className="font-semibold text-brand-navy text-xl mb-2">Marenco Kemp</h4>
                 <p className="text-gray-600 leading-relaxed">With over two decades of leadership experience forged at pioneering companies like Google and Microsoft, Marenco has a proven track record in analytics and product development. At Microsoft Advertising, he built the company's first analytics function outside of the US, and while at YouTube, his machine learning analytics work was recognised with the prestigious annual Platinum Award. He lives in Amsterdam with his wife, daughter, and two whippets.</p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow flex flex-col items-center text-center">
-                <img 
-                  src="/lovable-uploads/909fa713-0586-4802-89c8-f1a9871b7be8.png" 
-                  alt="Andy Bibby" 
-                  className="w-32 h-48 md:w-40 md:h-60 object-cover rounded-lg shadow-lg mb-4"
-                />
+                <div className="relative flex items-center mb-4">
+                  <img 
+                    src="/lovable-uploads/909fa713-0586-4802-89c8-f1a9871b7be8.png" 
+                    alt="Andy Bibby" 
+                    className="w-32 h-48 md:w-40 md:h-60 object-cover rounded-lg shadow-lg"
+                  />
+                  <img 
+                    src="/linkedin-logo.png" 
+                    alt="LinkedIn" 
+                    className="w-8 h-8 ml-4 cursor-pointer hover:opacity-80 transition-opacity"
+                  />
+                </div>
                 <h4 className="font-semibold text-brand-navy text-xl mb-2">Andy Bibby</h4>
                 <p className="text-gray-600 leading-relaxed">A seasoned expert in digital marketing and advertising, Andy has a proven track record of leadership at top-tier organisations like Razorfish (Publicis) and Microsoft Advertising. His ability to merge technical knowledge with commercial strategy culminated in him leading the global WPP relationship for Microsoft. Grounded by his training as a technologist, Andy brings a uniquely analytical and strategic approach to his work. He is a keen cyclist and resides just outside London.</p>
               </div>

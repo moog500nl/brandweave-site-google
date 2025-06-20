@@ -120,6 +120,7 @@ This is a full-stack React application for Brandweave AI, a brand intelligence p
   - Added Discovery Session as first step in audit process with Search icon and renumbered subsequent steps accordingly
   - Improved audit process box layout with icons on separate rows above titles for better visual hierarchy and consistent icon sizing
   - Added Google Analytics tracking code (G-XRWZZYHQBC) to main HTML file for comprehensive website analytics
+  - Added LinkedIn logos next to founder photos in About Us section with hover effects and proper positioning
 
 ## User Preferences
 
