@@ -3,9 +3,13 @@ import PageSection from '@/components/PageSection';
 import CallToAction from '@/components/CallToAction';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { CheckCircle, FileText, BarChart2, ListChecks, Brain, Search } from 'lucide-react';
-import SEO from '@/components/SEO';
+import usePageMetadata from '@/hooks/usePageMetadata';
 
 const AiAuditPage: React.FC = () => {
+  usePageMetadata(
+    "AI Brand Intelligence Audit | Understand Your AI Score | Brandweave AI",
+    "Our AI Brand Audit provides an expert assessment of how LLMs perceive your brand. Get actionable insights, competitor benchmarks, and improve your AI visibility."
+  );
 
   const processSteps = [
     { 
@@ -79,15 +83,8 @@ const AiAuditPage: React.FC = () => {
   ];
 
   return (
-    <>
-      <SEO
-        title="GEO Audit Process | 5-Stage AI Brand Intelligence Methodology | Brandweave AI"
-        description="Comprehensive generative engine optimization audit process. We interrogate ChatGPT, Claude, Gemini, and Perplexity to analyze your brand perception. Expert-led 5-stage methodology with competitor benchmarking."
-        keywords="GEO audit process, AI brand intelligence audit, ChatGPT brand analysis, Claude brand perception, Gemini brand visibility, Perplexity brand recommendations, LLM audit methodology, generative AI benchmarking"
-        canonical="https://brandweave.ai/ai-audit"
-      />
-      <div className="animate-fade-in">
-        <PageSection>
+    <div className="animate-fade-in">
+      <PageSection>
         <h1 className="text-4xl md:text-5xl font-bold text-center mb-6 text-brand-navy">
           The AI Brand Intelligence Audit
         </h1>
@@ -176,8 +173,7 @@ const AiAuditPage: React.FC = () => {
           </div>
         </div>
       </PageSection>
-      </div>
-    </>
+    </div>
   );
 };
 
