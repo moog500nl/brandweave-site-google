@@ -121,6 +121,7 @@ This is a full-stack React application for Brandweave AI, a brand intelligence p
   - Improved audit process box layout with icons on separate rows above titles for better visual hierarchy and consistent icon sizing
   - Added Google Analytics tracking code (G-XRWZZYHQBC) to main HTML file for comprehensive website analytics
   - Added clickable LinkedIn logos next to founder names in About Us section linking to their LinkedIn profiles with proper positioning and hover effects
+  - Implemented Person schema structured data for both founders to enhance SEO trust signals with comprehensive professional information
 
 ## User Preferences
 

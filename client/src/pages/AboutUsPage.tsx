@@ -4,12 +4,45 @@ import PageSection from '@/components/PageSection';
 import CallToAction from '@/components/CallToAction';
 import { Users, HelpCircle, Lightbulb } from 'lucide-react';
 import usePageMetadata from '@/hooks/usePageMetadata';
+import StructuredData from '@/components/StructuredData';
 
 const AboutUsPage: React.FC = () => {
   usePageMetadata(
     "About Brandweave AI | Expert-Led AI Brand Strategy",
     "Meet the Brandweave AI team. We help businesses navigate AI-driven brand discovery with expert-led audits and strategic insights for long-term AI brand health."
   );
+
+  const marencoPersonSchema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Marenco Kemp",
+    "jobTitle": "Co-Founder",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Brandweave AI"
+    },
+    "description": "With over two decades of leadership experience forged at pioneering companies like Google and Microsoft, Marenco has a proven track record in analytics and product development. At Microsoft Advertising, he built the company's first analytics function outside of the US, and while at YouTube, his machine learning analytics work was recognised with the prestigious annual Platinum Award.",
+    "url": "https://www.linkedin.com/in/marencokemp/",
+    "sameAs": ["https://www.linkedin.com/in/marencokemp/"],
+    "alumniOf": ["Google", "Microsoft", "YouTube"],
+    "knowsAbout": ["Analytics", "Product Development", "Machine Learning", "Digital Marketing", "AI Brand Intelligence"]
+  };
+
+  const andyPersonSchema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Andy Bibby",
+    "jobTitle": "Co-Founder",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Brandweave AI"
+    },
+    "description": "A seasoned expert in digital marketing and advertising, Andy has a proven track record of leadership at top-tier organisations like Razorfish (Publicis) and Microsoft Advertising. His ability to merge technical knowledge with commercial strategy culminated in him leading the global WPP relationship for Microsoft.",
+    "url": "https://www.linkedin.com/in/anbibby/",
+    "sameAs": ["https://www.linkedin.com/in/anbibby/"],
+    "alumniOf": ["Razorfish", "Publicis", "Microsoft Advertising", "WPP"],
+    "knowsAbout": ["Digital Marketing", "Advertising", "Commercial Strategy", "Technology", "AI Brand Intelligence"]
+  };
 
   const topBoxes = [
     {
@@ -119,6 +152,10 @@ const AboutUsPage: React.FC = () => {
           </div>
         </div>
       </section>
+      
+      {/* Structured Data for SEO */}
+      <StructuredData data={marencoPersonSchema} />
+      <StructuredData data={andyPersonSchema} />
     </div>
   );
 };
