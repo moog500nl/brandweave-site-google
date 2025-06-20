@@ -125,6 +125,7 @@ This is a full-stack React application for Brandweave AI, a brand intelligence p
   - Generated XML sitemap and robots.txt file for comprehensive SEO optimization and search engine crawling directives
   - Enhanced homepage SEO with improved meta descriptions, structured data, and keyword optimization focused on AI brand intelligence and LLM analysis
   - Added "Explore Audit" button above "Get Audit" button on homepage with proper vertical alignment and brand navy blue styling
+  - Added new FAQ "How are you different from other solutions?" as first item in AI Audit page with detailed forensic approach explanation
 
 ## User Preferences
 

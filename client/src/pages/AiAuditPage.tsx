@@ -69,6 +69,10 @@ const AiAuditPage: React.FC = () => {
 
   const faqs = [
     {
+      question: "How are you different from other solutions?",
+      answer: "While many start-ups provide SaaS dashboards to track AI-driven brand mentions, their methodologies vary significantly. This inconsistency is akin to using multiple, differently calibrated speedometers to gauge your speed in the world of AI search.\n\nBrandweave offers a more forensic approach. Like a race engineer, we deconstruct the entire system, fine-tune each element, and demonstrate the tangible performance gains you can expect. For businesses that require strategic insight, not simply data, Brandweave's audit delivers a more thorough and ultimately more valuable service."
+    },
+    {
       question: "Which AI models do you evaluate?",
       answer: "We have the capabilities to evaluate OpenAI ChatGPT, Google Gemini, Perplexity, Anthropic Claude and X Grok."
     },

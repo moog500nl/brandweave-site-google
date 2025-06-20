@@ -19,7 +19,7 @@ const PricingContactPage: React.FC = () => {
             Unique and Comprehensive
           </h1>
           <p className="text-xl text-gray-700 max-w-2xl mx-auto mb-12">
-            Be the Brand AI Trusts and Recommends
+            We show you what AI thinks of your brand and how to make it think differently.
           </p>
         </div>
 
