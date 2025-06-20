@@ -56,9 +56,9 @@ const HomePage: React.FC = () => {
   return (
     <>
       <SEO
-        title="Brandweave AI: Control Your AI Narrative & Boost Brand Visibility"
-        description="Is your brand invisible to AI? Brandweave AI offers expert Audits to understand & influence how AI models perceive your brand. Take control of your AI narrative."
-        keywords="AI brand perception, brand intelligence audit, AI marketing, brand visibility, LLM optimization, ChatGPT brand analysis, AI narrative control"
+        title="Generative Engine Optimization (GEO) | AI Brand Intelligence Audits | Brandweave AI"
+        description="Expert generative engine optimization services. We audit how ChatGPT, Claude, Gemini, and Perplexity perceive your brand. Improve AI recommendations and visibility through data-driven GEO strategies."
+        keywords="generative engine optimization, GEO services, AI brand perception audit, ChatGPT optimization, Claude AI brand analysis, Gemini brand visibility, Perplexity optimization, LLM brand intelligence, AI model recommendations, generative AI marketing"
         canonical="https://brandweave.ai/"
         structuredData={structuredData}
       />
