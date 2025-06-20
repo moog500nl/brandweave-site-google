@@ -56,10 +56,13 @@ const HomePage: React.FC = () => {
   return (
     <>
       <SEO
-        title="Brandweave AI: Control Your AI Narrative & Boost Brand Visibility"
-        description="Is your brand invisible to AI? Brandweave AI offers expert Audits to understand & influence how AI models perceive your brand. Take control of your AI narrative."
-        keywords="AI brand perception, brand intelligence audit, AI marketing, brand visibility, LLM optimization, ChatGPT brand analysis, AI narrative control"
+        title="AI Brand Perception Decoded - Brandweave AI Intelligence Platform"
+        description="Discover what AI thinks of your brand with our expert analysis. We decode AI brand perception from ChatGPT, Claude, and Grok to help you control your narrative and boost visibility."
+        keywords="AI brand perception, LLM brand analysis, ChatGPT brand audit, Claude brand intelligence, Grok AI analysis, AI marketing strategy, brand visibility optimization, AI narrative control, digital brand intelligence"
         canonical="https://brandweave.ai/"
+        ogImage="https://brandweave.ai/og-image.jpg"
+        ogType="website"
+        twitterCard="summary_large_image"
         structuredData={structuredData}
       />
       
