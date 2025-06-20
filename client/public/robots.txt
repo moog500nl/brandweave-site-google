@@ -1,14 +1,18 @@
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Twitterbot
-Allow: /
-
-User-agent: facebookexternalhit
-Allow: /
-
 User-agent: *
 Allow: /
+
+# Sitemap
+Sitemap: https://brandweave.ai/sitemap.xml
+
+# Disallow crawling of any admin or internal directories
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /assets/
+
+# Allow all search engines to crawl the main content
+Allow: /
+Allow: /about-us
+Allow: /ai-audit
+Allow: /why-it-matters
+Allow: /pricing-contact

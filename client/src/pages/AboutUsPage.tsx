@@ -25,7 +25,7 @@ const AboutUsPage: React.FC = () => {
     "url": "https://www.linkedin.com/in/marencokemp/",
     "sameAs": ["https://www.linkedin.com/in/marencokemp/"],
     "alumniOf": ["Google", "Microsoft", "YouTube"],
-    "knowsAbout": ["Analytics", "Product Development", "Machine Learning", "Digital Marketing", "AI Brand Intelligence"]
+    "knowsAbout": ["Analytics", "Product Development", "Machine Learning", "Digital Marketing", "AI Brand Intelligence","Generative Engine Optimisation"]
   };
 
   const andyPersonSchema = {
@@ -41,7 +41,7 @@ const AboutUsPage: React.FC = () => {
     "url": "https://www.linkedin.com/in/anbibby/",
     "sameAs": ["https://www.linkedin.com/in/anbibby/"],
     "alumniOf": ["Razorfish", "Publicis", "Microsoft Advertising", "WPP"],
-    "knowsAbout": ["Digital Marketing", "Advertising", "Commercial Strategy", "Technology", "AI Brand Intelligence"]
+    "knowsAbout": ["Digital Marketing", "Advertising", "Commercial Strategy", "Technology", "AI Brand Intelligence", "Generative Engine Optimisation"]
   };
 
   const topBoxes = [
