@@ -3,14 +3,10 @@ import React from 'react';
 import PageSection from '@/components/PageSection';
 import CallToAction from '@/components/CallToAction';
 import { Users, HelpCircle, Lightbulb } from 'lucide-react';
-import usePageMetadata from '@/hooks/usePageMetadata';
+import SEO from '@/components/SEO';
 import StructuredData from '@/components/StructuredData';
 
 const AboutUsPage: React.FC = () => {
-  usePageMetadata(
-    "About Brandweave AI | Expert-Led AI Brand Strategy",
-    "Meet the Brandweave AI team. We help businesses navigate AI-driven brand discovery with expert-led audits and strategic insights for long-term AI brand health."
-  );
 
   const marencoPersonSchema = {
     "@context": "https://schema.org",
@@ -56,11 +52,18 @@ const AboutUsPage: React.FC = () => {
   ];
 
   return (
-    <div className="animate-fade-in">
-      <section className="py-2 md:py-4">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <div className="flex justify-center mb-6">
+    <>
+      <SEO
+        title="GEO Experts | Brandweave AI Founders | About Our AI Brand Intelligence Team"
+        description="Meet the generative engine optimization experts behind Brandweave AI. Marenco Kemp and Andy Griffiths help brands optimize for ChatGPT, Claude, Gemini, and Perplexity recommendations through data-driven GEO strategies."
+        keywords="GEO experts, generative engine optimization specialists, AI brand intelligence founders, ChatGPT optimization experts, Claude AI specialists, Gemini brand consultants, Perplexity optimization team"
+        canonical="https://brandweave.ai/about-us"
+      />
+      <div className="animate-fade-in">
+        <section className="py-2 md:py-4">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center">
+              <div className="flex justify-center mb-6">
               <img 
                 src="/lovable-uploads/5b821185-5349-41f3-8c0f-4245b2cb373a.png" 
                 alt="Brandweave AI" 
@@ -156,7 +159,8 @@ const AboutUsPage: React.FC = () => {
       {/* Structured Data for SEO */}
       <StructuredData data={marencoPersonSchema} />
       <StructuredData data={andyPersonSchema} />
-    </div>
+      </div>
+    </>
   );
 };
 
