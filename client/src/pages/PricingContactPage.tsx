@@ -1,24 +1,27 @@
 import React from 'react';
 import PageSection from '@/components/PageSection';
 import { Mail, CheckCircle } from 'lucide-react';
-import usePageMetadata from '@/hooks/usePageMetadata'; // Import the hook
+import SEO from '@/components/SEO';
 
 const PricingContactPage: React.FC = () => {
-  usePageMetadata(
-    "AI Brand Audit Pricing & Contact | Brandweave AI",
-    "Get transparent pricing for our comprehensive AI Brand Intelligence Audit. Contact Brandweave AI founders to start improving your brand's AI presence."
-  );
 
 
 
   return (
-    <div className="animate-fade-in">
-      <PageSection>
-        <div className="text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-brand-navy">
-            Unique and Comprehensive
-          </h1>
-          <p className="text-xl text-gray-700 max-w-2xl mx-auto mb-12">
+    <>
+      <SEO
+        title="GEO Audit Pricing | £5,000 Comprehensive AI Brand Intelligence | Brandweave AI"
+        description="Transparent pricing for generative engine optimization audits. £5,000 for comprehensive ChatGPT, Claude, Gemini, and Perplexity brand analysis with competitive benchmarking and actionable GEO recommendations."
+        keywords="GEO audit pricing, generative engine optimization cost, AI brand intelligence pricing, ChatGPT optimization price, Claude brand analysis cost, Gemini audit pricing, Perplexity optimization rates"
+        canonical="https://brandweave.ai/pricing-contact"
+      />
+      <div className="animate-fade-in">
+        <PageSection>
+          <div className="text-center">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-brand-navy">
+              Unique and Comprehensive
+            </h1>
+            <p className="text-xl text-gray-700 max-w-2xl mx-auto mb-12">
             Be the Brand AI Trusts and Recommends
           </p>
         </div>
@@ -89,7 +92,8 @@ const PricingContactPage: React.FC = () => {
           </div>
         </div>
       </PageSection>
-    </div>
+      </div>
+    </>
   );
 };
 
