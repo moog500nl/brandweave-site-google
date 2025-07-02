@@ -127,6 +127,7 @@ This is a full-stack React application for Brandweave AI, a brand intelligence p
   - Added "Explore Audit" button above "Get Audit" button on homepage with proper vertical alignment and brand navy blue styling
   - Added new FAQ "How are you different from other solutions?" as first item in AI Audit page with detailed forensic approach explanation
   - Fixed crawler SEO issues by adding fallback meta description and hidden H1 tag to base HTML for Ahrefs compatibility
+  - Added comprehensive GEO and AI brand intelligence content section to homepage to increase word count above 50 words for better SEO coverage
 
 ## User Preferences
 
