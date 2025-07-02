@@ -1,15 +1,11 @@
 import React from 'react';
 import PageSection from '@/components/PageSection';
 import CallToAction from '@/components/CallToAction';
+import SEO from '@/components/SEO';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { CheckCircle, FileText, BarChart2, ListChecks, Brain, Search } from 'lucide-react';
-import usePageMetadata from '@/hooks/usePageMetadata';
 
 const AiAuditPage: React.FC = () => {
-  usePageMetadata(
-    "AI Brand Intelligence Audit | Understand Your AI Score | Brandweave AI",
-    "Our AI Brand Audit provides an expert assessment of how LLMs perceive your brand. Get actionable insights, competitor benchmarks, and improve your AI visibility."
-  );
 
   const processSteps = [
     { 
@@ -87,9 +83,19 @@ const AiAuditPage: React.FC = () => {
   ];
 
   return (
-    <div className="animate-fade-in">
-      <PageSection>
-        <h1 className="text-4xl md:text-5xl font-bold text-center mb-6 text-brand-navy">
+    <>
+      <SEO
+        title="AI Brand Intelligence Audit | Understand Your AI Score | Brandweave AI"
+        description="Our AI Brand Audit provides an expert assessment of how LLMs perceive your brand. Get actionable insights, competitor benchmarks, and improve your AI visibility."
+        keywords="AI brand audit, LLM brand analysis, brand intelligence assessment, AI brand score, ChatGPT brand audit, AI brand perception, brand visibility audit"
+        canonical="https://brandweave.ai/ai-audit"
+        ogImage="https://brandweave.ai/og-image.jpg"
+        ogType="article"
+        twitterCard="summary_large_image"
+      />
+      <div className="animate-fade-in">
+        <PageSection>
+          <h1 className="text-4xl md:text-5xl font-bold text-center mb-6 text-brand-navy">
           The AI Brand Intelligence Audit
         </h1>
         <p className="text-xl text-center text-gray-700 max-w-3xl mx-auto mb-12">
@@ -177,7 +183,8 @@ const AiAuditPage: React.FC = () => {
           </div>
         </div>
       </PageSection>
-    </div>
+      </div>
+    </>
   );
 };
 

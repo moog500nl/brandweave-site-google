@@ -2,15 +2,11 @@
 import React from 'react';
 import PageSection from '@/components/PageSection';
 import CallToAction from '@/components/CallToAction';
+import SEO from '@/components/SEO';
 import { Users, HelpCircle, Lightbulb } from 'lucide-react';
-import usePageMetadata from '@/hooks/usePageMetadata';
 import StructuredData from '@/components/StructuredData';
 
 const AboutUsPage: React.FC = () => {
-  usePageMetadata(
-    "About Brandweave AI | Expert-Led AI Brand Strategy",
-    "Meet the Brandweave AI team. We help businesses navigate AI-driven brand discovery with expert-led audits and strategic insights for long-term AI brand health."
-  );
 
   const marencoPersonSchema = {
     "@context": "https://schema.org",
@@ -56,7 +52,17 @@ const AboutUsPage: React.FC = () => {
   ];
 
   return (
-    <div className="animate-fade-in">
+    <>
+      <SEO
+        title="About Brandweave AI | Expert-Led AI Brand Strategy"
+        description="Meet the Brandweave AI team. We help businesses navigate AI-driven brand discovery with expert-led audits and strategic insights for long-term AI brand health."
+        keywords="about brandweave AI, AI brand strategy team, brand intelligence experts, AI marketing consultants, digital brand consultancy"
+        canonical="https://brandweave.ai/about-us"
+        ogImage="https://brandweave.ai/og-image.jpg"
+        ogType="website"
+        twitterCard="summary_large_image"
+      />
+      <div className="animate-fade-in">
       <section className="py-2 md:py-4">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
@@ -156,7 +162,8 @@ const AboutUsPage: React.FC = () => {
       {/* Structured Data for SEO */}
       <StructuredData data={marencoPersonSchema} />
       <StructuredData data={andyPersonSchema} />
-    </div>
+      </div>
+    </>
   );
 };
 

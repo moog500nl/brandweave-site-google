@@ -1,13 +1,9 @@
 import React from 'react';
 import PageSection from '@/components/PageSection';
+import SEO from '@/components/SEO';
 import { Mail, CheckCircle } from 'lucide-react';
-import usePageMetadata from '@/hooks/usePageMetadata'; // Import the hook
 
 const PricingContactPage: React.FC = () => {
-  usePageMetadata(
-    "AI Brand Audit Pricing & Contact | Brandweave AI",
-    "Get transparent pricing for our comprehensive AI Brand Intelligence Audit. Contact Brandweave AI founders to start improving your brand's AI presence."
-  );
 
 
 
