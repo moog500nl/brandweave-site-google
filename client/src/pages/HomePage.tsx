@@ -192,53 +192,6 @@ const HomePage: React.FC = () => {
           </div>
         </PageSection>
 
-        {/* Understanding GEO and AI Brand Intelligence */}
-        <PageSection className="py-16">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-brand-navy">
-              Understanding Generative Engine Optimization (GEO)
-            </h2>
-            
-            <div className="prose max-w-none text-gray-700 space-y-6">
-              <p className="text-lg leading-relaxed">
-                As artificial intelligence reshapes how people discover brands and make purchasing decisions, traditional SEO strategies are no longer sufficient. 
-                Generative Engine Optimization (GEO) represents the next evolution in digital marketing, focusing specifically on how AI models like ChatGPT, 
-                Claude, Gemini, and Grok perceive, understand, and recommend your brand.
-              </p>
-              
-              <p className="text-lg leading-relaxed">
-                Unlike traditional search engines that present a list of links, AI answer engines provide direct responses and recommendations. 
-                When potential customers ask these AI systems for product recommendations, business solutions, or service providers, 
-                the AI models draw from their training data to make informed suggestions. Your brand's visibility and positioning within 
-                these AI responses directly impacts your future customer acquisition.
-              </p>
-              
-              <div className="bg-brand-lightGray p-6 rounded-lg my-8">
-                <h3 className="text-xl font-semibold text-brand-navy mb-4">Why AI Brand Intelligence Matters Now</h3>
-                <p className="leading-relaxed">
-                  Research indicates that AI-powered search is fundamentally changing consumer behavior. Instead of browsing through 
-                  multiple search results, users increasingly rely on AI recommendations for initial brand discovery. This shift means 
-                  that brands invisible to AI systems risk being excluded from consideration sets entirely, regardless of their 
-                  traditional SEO performance or marketing spend.
-                </p>
-              </div>
-              
-              <p className="text-lg leading-relaxed">
-                Our AI Brand Intelligence Audit methodology involves systematically interrogating multiple large language models 
-                to understand how they perceive your brand across various contexts, queries, and competitive scenarios. We analyze 
-                sentiment, trust signals, positioning accuracy, and recommendation frequency to provide actionable insights for 
-                improving your AI visibility.
-              </p>
-              
-              <p className="text-lg leading-relaxed">
-                The audit process combines advanced prompt engineering techniques with quantitative analysis to deliver measurable 
-                results. By understanding exactly how AI models currently represent your brand, we can develop targeted strategies 
-                to enhance your positioning, improve sentiment scores, and increase recommendation frequency across multiple AI platforms.
-              </p>
-            </div>
-          </div>
-        </PageSection>
-
         {/* How It Works (Overview) */}
         <PageSection className="relative">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-brand-navy transform transition-all duration-1000 animate-[fadeInUp_0.8s_ease-out_forwards] opacity-0 translate-y-8">
