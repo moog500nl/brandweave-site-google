@@ -8,7 +8,17 @@ const PricingContactPage: React.FC = () => {
 
 
   return (
-    <div className="animate-fade-in">
+    <>
+      <SEO
+        title="AI Brand Audit Pricing & Contact | Brandweave AI"
+        description="Get transparent pricing for our comprehensive AI Brand Intelligence Audit. Contact Brandweave AI founders to start improving your brand's AI presence."
+        keywords="AI brand audit pricing, brand intelligence cost, AI marketing audit price, ChatGPT brand analysis pricing, brand strategy consultation"
+        canonical="https://brandweave.ai/pricing-contact"
+        ogImage="https://brandweave.ai/og-image.jpg"
+        ogType="website"
+        twitterCard="summary_large_image"
+      />
+      <div className="animate-fade-in">
       <PageSection>
         <div className="text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 text-brand-navy">
@@ -85,7 +95,8 @@ const PricingContactPage: React.FC = () => {
           </div>
         </div>
       </PageSection>
-    </div>
+      </div>
+    </>
   );
 };
 
