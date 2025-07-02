@@ -129,6 +129,7 @@ This is a full-stack React application for Brandweave AI, a brand intelligence p
   - Fixed crawler SEO issues by adding fallback meta description and hidden H1 tag to base HTML for Ahrefs compatibility
   - Added hidden navigation links to base HTML for crawler discovery to resolve "no outgoing links" issue reported by Ahrefs
   - Fixed canonical URL issues by adding fallback canonical URL to base HTML and confirmed SEO component implementation on key pages
+  - Added HTTPS redirect middleware and security headers to properly handle HTTP to HTTPS redirects for better SEO compliance
 
 ## User Preferences
 
