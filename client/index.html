@@ -106,8 +106,8 @@
         </main>
       </article>
     </div>
-    <!-- Fallback content for crawlers - visible before JS loads -->
-    <div id="fallback-content" style="display: block;">
+    <!-- Fallback content for crawlers only -->
+    <div id="fallback-content" style="display: none;">
       <header style="padding: 20px; background: #14213D; color: white; text-align: center;">
         <h1 style="margin: 0; font-size: 2.5rem; font-weight: bold;">Brandweave AI - Control Your AI Narrative</h1>
         <p style="margin: 10px 0; font-size: 1.2rem;">AI Brand Intelligence Audits</p>
@@ -157,15 +157,39 @@
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
     <script>
-      // Hide fallback content once React app loads
-      window.addEventListener('DOMContentLoaded', function() {
-        setTimeout(function() {
+      // Show fallback content only to crawlers, not to real users
+      (function() {
+        const userAgent = navigator.userAgent.toLowerCase();
+        const crawlerPatterns = [
+          'googlebot', 'bingbot', 'slurp', 'duckduckbot', 'baiduspider',
+          'yandexbot', 'facebookexternalhit', 'twitterbot', 'linkedinbot',
+          'whatsapp', 'telegrambot', 'chatgpt', 'gptbot', 'openai', 'claude',
+          'anthropic', 'perplexity', 'bing', 'crawler', 'spider', 'bot'
+        ];
+        
+        const isCrawler = crawlerPatterns.some(pattern => 
+          userAgent.includes(pattern)
+        ) || !window.navigator.webdriver === undefined;
+        
+        if (isCrawler) {
+          // Show fallback content for crawlers
           const fallbackContent = document.getElementById('fallback-content');
-          if (fallbackContent && document.getElementById('root').children.length > 0) {
+          if (fallbackContent) {
+            fallbackContent.style.display = 'block';
+          }
+          // Hide the React root for crawlers
+          const reactRoot = document.getElementById('root');
+          if (reactRoot) {
+            reactRoot.style.display = 'none';
+          }
+        } else {
+          // For real users, ensure fallback content stays hidden
+          const fallbackContent = document.getElementById('fallback-content');
+          if (fallbackContent) {
             fallbackContent.style.display = 'none';
           }
-        }, 100);
-      });
+        }
+      })();
     </script>
     <!-- This is a replit script which adds a banner on the top of the page when opened in development mode outside the replit environment -->
     <script type="text/javascript" src="https://replit.com/public/js/replit-dev-banner.js"></script>
