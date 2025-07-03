@@ -106,44 +106,67 @@
         </main>
       </article>
     </div>
-    <div id="root">
-      <!-- Pre-rendered content for crawlers -->
-      <noscript>
-        <header>
-          <h1>Brandweave AI - Control Your AI Narrative</h1>
-          <nav>
-            <a href="/why-it-matters">Why It Matters</a>
-            <a href="/ai-audit">AI Audit</a>
-            <a href="/about-us">About Us</a>
-            <a href="/pricing-contact">Pricing & Contact</a>
-          </nav>
-        </header>
-        <main>
-          <section>
-            <h2>AI Brand Intelligence Audits</h2>
-            <p>Understand how AI models like ChatGPT, Claude, and Gemini perceive your brand. Our comprehensive audits reveal how generative AI platforms represent your business and provide actionable insights to improve your AI visibility.</p>
-          </section>
-          <section>
-            <h3>What We Audit</h3>
-            <ul>
-              <li>Brand perception across major AI platforms</li>
-              <li>Competitive positioning in AI responses</li>
-              <li>Content gaps affecting AI understanding</li>
-              <li>Opportunities for improved AI visibility</li>
-            </ul>
-          </section>
-          <section>
-            <h3>Why It Matters</h3>
-            <p>AI is reshaping how customers discover brands. With over 50% of searches now generating AI-powered responses, your traditional SEO strategy may be leaving you invisible to potential customers.</p>
-          </section>
-          <section>
-            <h3>Get Started</h3>
-            <p>Ready to understand how AI sees your brand? Contact us for a comprehensive AI brand intelligence audit.</p>
-          </section>
-        </main>
-      </noscript>
+    <!-- Fallback content for crawlers - visible before JS loads -->
+    <div id="fallback-content" style="display: block;">
+      <header style="padding: 20px; background: #14213D; color: white; text-align: center;">
+        <h1 style="margin: 0; font-size: 2.5rem; font-weight: bold;">Brandweave AI - Control Your AI Narrative</h1>
+        <p style="margin: 10px 0; font-size: 1.2rem;">AI Brand Intelligence Audits</p>
+        <nav style="margin-top: 20px;">
+          <a href="/why-it-matters" style="color: #FCA311; margin: 0 15px; text-decoration: none;">Why It Matters</a>
+          <a href="/ai-audit" style="color: #FCA311; margin: 0 15px; text-decoration: none;">AI Audit</a>
+          <a href="/about-us" style="color: #FCA311; margin: 0 15px; text-decoration: none;">About Us</a>
+          <a href="/pricing-contact" style="color: #FCA311; margin: 0 15px; text-decoration: none;">Pricing & Contact</a>
+        </nav>
+      </header>
+      <main style="padding: 40px 20px; max-width: 1200px; margin: 0 auto;">
+        <section style="margin-bottom: 40px;">
+          <h2 style="color: #14213D; font-size: 2rem; margin-bottom: 20px;">AI Brand Intelligence Audits</h2>
+          <p style="font-size: 1.1rem; line-height: 1.6; color: #333;">Understand how AI models like ChatGPT, Claude, Gemini, and Grok perceive your brand. Our comprehensive audits reveal how generative AI platforms represent your business and provide actionable insights to improve your AI visibility.</p>
+        </section>
+        <section style="margin-bottom: 40px;">
+          <h3 style="color: #14213D; font-size: 1.5rem; margin-bottom: 15px;">Our 5-Step Audit Process</h3>
+          <ol style="font-size: 1rem; line-height: 1.6; color: #333;">
+            <li style="margin-bottom: 10px;"><strong>Discovery Session:</strong> Understanding your brand and objectives</li>
+            <li style="margin-bottom: 10px;"><strong>Analysis:</strong> Testing AI model responses across multiple scenarios</li>
+            <li style="margin-bottom: 10px;"><strong>Scoring:</strong> Benchmarking your AI visibility against competitors</li>
+            <li style="margin-bottom: 10px;"><strong>Benchmarking:</strong> Comparing performance across different AI platforms</li>
+            <li style="margin-bottom: 10px;"><strong>Recommendations:</strong> Providing actionable strategies for improvement</li>
+          </ol>
+        </section>
+        <section style="margin-bottom: 40px;">
+          <h3 style="color: #14213D; font-size: 1.5rem; margin-bottom: 15px;">Why AI Brand Perception Matters</h3>
+          <p style="font-size: 1.1rem; line-height: 1.6; color: #333;">AI is reshaping brand discovery. With generative AI adoption reaching nearly 50% by 2025, your audience increasingly turns to AI for information. Traditional SEO strategies may leave you invisible to potential customers using AI-powered search.</p>
+        </section>
+        <section style="margin-bottom: 40px;">
+          <h3 style="color: #14213D; font-size: 1.5rem; margin-bottom: 15px;">What We Deliver</h3>
+          <ul style="font-size: 1rem; line-height: 1.6; color: #333;">
+            <li style="margin-bottom: 8px;">Comprehensive brand perception analysis across major AI platforms</li>
+            <li style="margin-bottom: 8px;">Competitive positioning insights in AI responses</li>
+            <li style="margin-bottom: 8px;">Content gap identification affecting AI understanding</li>
+            <li style="margin-bottom: 8px;">Strategic recommendations for improved AI visibility</li>
+            <li style="margin-bottom: 8px;">Actionable implementation roadmap</li>
+          </ul>
+        </section>
+        <section style="background: #14213D; color: white; padding: 30px; border-radius: 10px; text-align: center;">
+          <h3 style="color: white; font-size: 1.5rem; margin-bottom: 15px;">Ready to Understand How AI Sees Your Brand?</h3>
+          <p style="font-size: 1.1rem; margin-bottom: 20px;">Contact us for a comprehensive AI brand intelligence audit.</p>
+          <a href="/pricing-contact" style="background: #FCA311; color: #14213D; padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold;">Get Started</a>
+        </section>
+      </main>
     </div>
+    <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+      // Hide fallback content once React app loads
+      window.addEventListener('DOMContentLoaded', function() {
+        setTimeout(function() {
+          const fallbackContent = document.getElementById('fallback-content');
+          if (fallbackContent && document.getElementById('root').children.length > 0) {
+            fallbackContent.style.display = 'none';
+          }
+        }, 100);
+      });
+    </script>
     <!-- This is a replit script which adds a banner on the top of the page when opened in development mode outside the replit environment -->
     <script type="text/javascript" src="https://replit.com/public/js/replit-dev-banner.js"></script>
   </body>
