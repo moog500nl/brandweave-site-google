@@ -10,15 +10,21 @@ app.use((req, res, next) => {
   const protocol = req.header('x-forwarded-proto') || 'http';
   
   if (process.env.NODE_ENV === 'production') {
-    // Redirect www to non-www
+    let redirectHost = host;
+    let needsRedirect = false;
+    
+    // Remove www subdomain
     if (host.startsWith('www.')) {
-      const nonWwwHost = host.replace('www.', '');
-      return res.redirect(301, `https://${nonWwwHost}${req.url}`);
+      redirectHost = host.replace('www.', '');
+      needsRedirect = true;
     }
     
-    // Force HTTPS
-    if (protocol !== 'https') {
-      return res.redirect(301, `https://${host}${req.url}`);
+    // Remove port from redirect URL for clean URLs
+    redirectHost = redirectHost.replace(':443', '').replace(':80', '');
+    
+    // Force HTTPS or redirect www
+    if (protocol !== 'https' || needsRedirect) {
+      return res.redirect(301, `https://${redirectHost}${req.url}`);
     }
   }
   
