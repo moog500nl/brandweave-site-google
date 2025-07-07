@@ -133,6 +133,7 @@ This is a full-stack React application for Brandweave AI, a brand intelligence p
   - Implemented pre-rendered semantic HTML content for OpenAI crawler compatibility with comprehensive structured data, hidden content sections, and noscript fallbacks
   - Added visible fallback content with complete page structure and brand styling for OpenAI crawler, ensuring full semantic HTML is available before JavaScript loads
   - Implemented smart crawler detection to show fallback content only to bots (including OpenAI, Google, Bing) while maintaining clean user experience for real visitors
+  - Added 301 redirect from www domain to non-www domain for proper SEO consolidation and URL standardization
 
 ## User Preferences
 

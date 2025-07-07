@@ -4,13 +4,25 @@ import { setupVite, serveStatic, log } from "./vite";
 
 const app = express();
 
-// Force HTTPS redirect in production
+// Force HTTPS redirect and www to non-www redirect in production
 app.use((req, res, next) => {
-  if (process.env.NODE_ENV === 'production' && req.header('x-forwarded-proto') !== 'https') {
-    res.redirect(301, `https://${req.header('host')}${req.url}`);
-  } else {
-    next();
+  const host = req.header('host') || '';
+  const protocol = req.header('x-forwarded-proto') || 'http';
+  
+  if (process.env.NODE_ENV === 'production') {
+    // Redirect www to non-www
+    if (host.startsWith('www.')) {
+      const nonWwwHost = host.replace('www.', '');
+      return res.redirect(301, `https://${nonWwwHost}${req.url}`);
+    }
+    
+    // Force HTTPS
+    if (protocol !== 'https') {
+      return res.redirect(301, `https://${host}${req.url}`);
+    }
   }
+  
+  next();
 });
 
 // Security headers
