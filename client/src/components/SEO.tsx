@@ -41,7 +41,7 @@ const SEO: React.FC<SEOProps> = ({
       <meta property="og:description" content={description} />
       <meta property="og:type" content={ogType} />
       <meta property="og:image" content={ogImage} />
-      <meta property="og:url" content={canonical || window.location.href} />
+      <meta property="og:url" content={window.location.href} />
       <meta property="og:site_name" content="Brandweave AI" />
       
       {/* Twitter Card */}
