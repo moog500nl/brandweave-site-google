@@ -21,6 +21,22 @@ app.use((req, res, next) => {
   next();
 });
 
+// 301 redirects configuration
+const redirects = [
+  // Example redirects - add your specific redirects here
+  // { from: '/old-path', to: '/new-path' },
+  // { from: '/old-blog', to: '/blog' },
+];
+
+app.use((req, res, next) => {
+  const redirect = redirects.find(r => r.from === req.path);
+  if (redirect) {
+    res.redirect(301, redirect.to);
+  } else {
+    next();
+  }
+});
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
