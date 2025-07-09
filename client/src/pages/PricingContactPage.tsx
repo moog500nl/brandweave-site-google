@@ -10,9 +10,9 @@ const PricingContactPage: React.FC = () => {
   return (
     <>
       <SEO
-        title="AI Brand Audit Pricing & Contact | Brandweave AI"
-        description="Get transparent pricing for our comprehensive AI Brand Intelligence Audit. Contact Brandweave AI founders to start improving your brand's AI presence."
-        keywords="AI brand audit pricing, brand intelligence cost, AI marketing audit price, ChatGPT brand analysis pricing, brand strategy consultation"
+        title="Contact Us | Brandweave AI"
+        description="Get in touch with Brandweave AI to start your AI Brand Intelligence Audit. Contact our founders to improve your brand's AI presence and visibility."
+        keywords="AI brand audit contact, brand intelligence consultation, AI marketing experts, ChatGPT brand analysis, brand strategy consultation"
         canonical="https://brandweave.ai/pricing-contact"
         ogImage="https://brandweave.ai/og-image.jpg"
         ogType="website"
@@ -22,27 +22,26 @@ const PricingContactPage: React.FC = () => {
       <PageSection>
         <div className="text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 text-brand-navy">
-            Unique and Comprehensive
+            Contact Us
           </h1>
           <p className="text-xl text-gray-700 max-w-2xl mx-auto mb-12">
-            We show you what AI thinks of your brand and how to make it think differently.
+            Ready to understand how AI sees your brand? Get in touch to start your AI Brand Intelligence Audit.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-start">
-          {/* Pricing Section */}
+          {/* Service Description Section */}
           <div className="bg-brand-lightGray p-8 md:p-12 rounded-lg shadow-xl">
-            <h2 className="text-3xl font-semibold text-brand-navy mb-6 text-center">Introductory Pricing</h2>
-            <div className="text-center mb-6">
-              <span className="text-5xl font-bold text-brand-orange">£5,000</span>
-              <span className="text-lg text-gray-600"> / per Audit Report</span>
-            </div>
+            <h2 className="text-3xl font-semibold text-brand-navy mb-6 text-center">The AI Brand Intelligence Audit</h2>
             <div className="mb-6">
+              <p className="text-gray-700 mb-6 text-center">
+                Our comprehensive audit reveals how AI models like ChatGPT, Claude, Gemini, and Grok perceive your brand and provides actionable insights to improve your AI visibility.
+              </p>
               <ul className="space-y-4 text-gray-700">
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-[#FCA311] mr-3 mt-0.5 flex-shrink-0" />
                   <div>
-                    <strong className="text-brand-navy">An Executive PDF Report</strong>
+                    <strong className="text-brand-navy">Executive PDF Report</strong>
                     <p className="text-sm mt-1">A detailed ~30-page report containing the full analysis, findings, and strategic roadmap.</p>
                   </div>
                 </li>
