@@ -4,19 +4,50 @@ import SEO from '@/components/SEO';
 import { Mail, CheckCircle } from 'lucide-react';
 
 const PricingContactPage: React.FC = () => {
-
-
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact Brandweave AI",
+    "description": "Get in touch with Brandweave AI to start your AI Brand Intelligence Audit. Contact our founders to improve your brand's AI presence and visibility.",
+    "url": "https://brandweave.ai/pricing-contact",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "Brandweave AI",
+      "url": "https://brandweave.ai",
+      "logo": "https://brandweave.ai/bwlogo.svg",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "availableLanguage": "English"
+      },
+      "founder": [
+        {
+          "@type": "Person",
+          "name": "James Deehan",
+          "url": "https://www.linkedin.com/in/jamesdeehan/"
+        },
+        {
+          "@type": "Person",
+          "name": "James Donovan", 
+          "url": "https://www.linkedin.com/in/jamesgdonovan/"
+        }
+      ],
+      "serviceType": "AI Brand Intelligence Audit",
+      "areaServed": "Global"
+    }
+  };
 
   return (
     <>
       <SEO
-        title="Contact Us | Brandweave AI"
-        description="Get in touch with Brandweave AI to start your AI Brand Intelligence Audit. Contact our founders to improve your brand's AI presence and visibility."
-        keywords="AI brand audit contact, brand intelligence consultation, AI marketing experts, ChatGPT brand analysis, brand strategy consultation"
+        title="Contact Us - AI Brand Intelligence Audit | Brandweave AI"
+        description="Contact Brandweave AI to start your AI Brand Intelligence Audit. Get in touch with our founders to improve your brand's AI presence and visibility across ChatGPT, Claude, and Gemini."
+        keywords="contact AI brand audit, AI brand intelligence consultation, ChatGPT brand analysis contact, AI marketing experts, brand strategy consultation, AI audit inquiry"
         canonical="https://brandweave.ai/pricing-contact"
         ogImage="https://brandweave.ai/og-image.jpg"
         ogType="website"
         twitterCard="summary_large_image"
+        structuredData={structuredData}
       />
       <div className="animate-fade-in">
       <PageSection>
