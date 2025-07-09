@@ -34,9 +34,6 @@ const PricingContactPage: React.FC = () => {
           <div className="bg-brand-lightGray p-8 md:p-12 rounded-lg shadow-xl">
             <h2 className="text-3xl font-semibold text-brand-navy mb-6 text-center">The AI Brand Intelligence Audit</h2>
             <div className="mb-6">
-              <p className="text-gray-700 mb-6 text-center">
-                Our comprehensive audit reveals how AI models like ChatGPT, Claude, Gemini, and Grok perceive your brand and provides actionable insights to improve your AI visibility.
-              </p>
               <ul className="space-y-4 text-gray-700">
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-[#FCA311] mr-3 mt-0.5 flex-shrink-0" />
