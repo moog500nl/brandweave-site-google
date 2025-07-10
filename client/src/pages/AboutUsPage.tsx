@@ -57,7 +57,7 @@ const AboutUsPage: React.FC = () => {
         title="About Brandweave AI | Expert-Led AI Brand Strategy"
         description="Meet the Brandweave AI team. We help businesses navigate AI-driven brand discovery with expert-led audits and strategic insights for long-term AI brand health."
         keywords="about brandweave AI, AI brand strategy team, brand intelligence experts, AI marketing consultants, digital brand consultancy"
-        canonical="https://brandweave.ai/about-us"
+        canonical="https://www.brandweave.ai/about-us"
         ogImage="https://brandweave.ai/og-image.jpg"
         ogType="website"
         twitterCard="summary_large_image"

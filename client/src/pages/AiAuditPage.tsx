@@ -88,7 +88,7 @@ const AiAuditPage: React.FC = () => {
         title="AI Brand Intelligence Audit | Understand Your AI Score | Brandweave AI"
         description="Our AI Brand Audit provides an expert assessment of how LLMs perceive your brand. Get actionable insights, competitor benchmarks, and improve your AI visibility."
         keywords="AI brand audit, LLM brand analysis, brand intelligence assessment, AI brand score, ChatGPT brand audit, AI brand perception, brand visibility audit"
-        canonical="https://brandweave.ai/ai-audit"
+        canonical="https://www.brandweave.ai/ai-audit"
         ogImage="https://brandweave.ai/og-image.jpg"
         ogType="article"
         twitterCard="summary_large_image"

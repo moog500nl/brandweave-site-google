@@ -63,7 +63,7 @@ const WhyItMattersPage: React.FC = () => {
         title="Why AI Brand Perception Matters Now"
         description="AI is reshaping brand discovery. Learn why understanding your AI brand perception is crucial for visibility and growth in a 'zero-click' search world. Brandweave AI explains."
         keywords="AI brand perception, zero-click search, AI overviews, brand visibility, LLM impact, search evolution, brand discovery"
-        canonical="https://brandweave.ai/why-it-matters"
+        canonical="https://www.brandweave.ai/why-it-matters"
         structuredData={structuredData}
       />
       

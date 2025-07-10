@@ -43,7 +43,7 @@ const PricingContactPage: React.FC = () => {
         title="Contact Us - AI Brand Intelligence Audit | Brandweave AI"
         description="Contact Brandweave AI to start your AI Brand Intelligence Audit. Get in touch with our founders to improve your brand's AI presence and visibility across ChatGPT, Claude, and Gemini."
         keywords="contact AI brand audit, AI brand intelligence consultation, ChatGPT brand analysis contact, AI marketing experts, brand strategy consultation, AI audit inquiry"
-        canonical="https://brandweave.ai/pricing-contact"
+        canonical="https://www.brandweave.ai/pricing-contact"
         ogImage="https://brandweave.ai/og-image.jpg"
         ogType="website"
         twitterCard="summary_large_image"
