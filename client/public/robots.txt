@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://brandweave.ai/sitemap.xml
+Sitemap: https://www.brandweave.ai/sitemap.xml
 
 # Disallow crawling of any admin or internal directories
 Disallow: /admin/
