@@ -59,7 +59,7 @@ const HomePage: React.FC = () => {
         title="Generative Engine Optimisation Audits | Brandweave AI"
         description="Control your narrative and boost brand visibility. Brandweave's Generative Engine Optimisation audits show how ChatGPT, Gemini and Perplexity cite your brand."
         keywords="generative engine optimisation,GEO audit,AI visibility,ChatGPT visibility,answer engine optimisation,LLM search,AI brand strategy"
-        canonical="https://www.brandweave.ai/"
+        canonical="https://brandweave.ai/"
         ogImage="https://brandweave.ai/og-image.jpg"
         ogType="website"
         twitterCard="summary_large_image"
