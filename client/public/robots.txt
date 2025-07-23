@@ -2,17 +2,4 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://www.brandweave.ai/sitemap.xml
-
-# Disallow crawling of any admin or internal directories
-Disallow: /admin/
-Disallow: /api/
-Disallow: /_next/
-Disallow: /assets/
-
-# Allow all search engines to crawl the main content
-Allow: /
-Allow: /about-us
-Allow: /ai-audit
-Allow: /why-it-matters
-Allow: /pricing-contact
+Sitemap: https://brandweave.ai/sitemap.xml
